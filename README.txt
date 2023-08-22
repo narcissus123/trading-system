@@ -29,6 +29,6 @@ Method 2:
 -----------------------------------------------------
 My contributions Overview:
 
-I made valuable contributions to the development of various components in the trading system project. My contributions mainly focused on the front-end interface using QT, authentication implementation, and the trading strategy module. Additionally, I collaborated on integrating the front-end with the C++ back-end for seamless functionality.
+I made valuable contributions to the development of various components in the trading system project. My contributions mainly focused on the front-end interface using QT, authentication implementation, and the trading strategy module. Additionally, I collaborated on generating documents such as SRS documents, ensuring a comprehensive understanding of the project's architecture and functionality. Moreover, I participated in integrating the front-end with the C++ back-end for seamless functionality."
 
 
