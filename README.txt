@@ -26,6 +26,9 @@ Method 2:
 - Unzip file tradingsystem.zip
 - Open the tradingsystem directory in CLion
 - Click the run button (greeen arrow) at the very top right corner of CLion. If targets are automatically detected it should show up
+-----------------------------------------------------
+My contributions Overview:
 
+I made valuable contributions to the development of various components in the trading system project. My contributions mainly focused on the front-end interface using QT, authentication implementation, and the trading strategy module. Additionally, I collaborated on integrating the front-end with the C++ back-end for seamless functionality.
 
 
