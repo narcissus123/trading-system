@@ -1,0 +1,128 @@
+\hypertarget{class_authentication}{}\doxysection{Authentication Class Reference}
+\label{class_authentication}\index{Authentication@{Authentication}}
+
+
+This class deals with the user login of the application and authenticating users.  
+
+
+
+
+{\ttfamily \#include $<$authentication.\+h$>$}
+
+Inheritance diagram for Authentication\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_authentication}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_authentication_1_1_user}{User}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_authentication_a6bcc9a6288352951d2c6c9862399dad3}{sign\+In}} ()
+\begin{DoxyCompactList}\small\item\em Authetnicates the user on sign in or asks to enter credentials again. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_authentication_ae65ea0c8e08a4405f5897ffedb0985ee}{Authentication}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Creates the login popup window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_authentication_a769caf8dd9c79365cb8d1bda906a0f27}{loggedin}} ()
+\begin{DoxyCompactList}\small\item\em Gets the loggedin varaible. True is uccess, False is failure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_authentication_aff7ec25411b89d7523733acb8ef8d900}\label{class_authentication_aff7ec25411b89d7523733acb8ef8d900}} 
+\mbox{\hyperlink{class_authentication}{Authentication}} $\ast$ {\bfseries ui}
+\item 
+\mbox{\Hypertarget{class_authentication_a9af7abc5e4e43518846f486b80a3016d}\label{class_authentication_a9af7abc5e4e43518846f486b80a3016d}} 
+QLabel $\ast$ {\bfseries user\+Name\+Label}
+\item 
+\mbox{\Hypertarget{class_authentication_a09f35187cee5553026f28641377218bb}\label{class_authentication_a09f35187cee5553026f28641377218bb}} 
+QLine\+Edit $\ast$ {\bfseries user\+Name}
+\item 
+\mbox{\Hypertarget{class_authentication_a512fc8590dd7dc186c10e99c1b7ecdc1}\label{class_authentication_a512fc8590dd7dc186c10e99c1b7ecdc1}} 
+QLabel $\ast$ {\bfseries password\+Label}
+\item 
+\mbox{\Hypertarget{class_authentication_af11808c1dc9b9b0be0a10f2f441d6ea4}\label{class_authentication_af11808c1dc9b9b0be0a10f2f441d6ea4}} 
+QLine\+Edit $\ast$ {\bfseries password}
+\item 
+\mbox{\Hypertarget{class_authentication_ae885687a3162ff96adaebce024318811}\label{class_authentication_ae885687a3162ff96adaebce024318811}} 
+QPush\+Button $\ast$ {\bfseries Sign\+In\+Butt}
+\item 
+\mbox{\Hypertarget{class_authentication_a30e32ce917ef3331fa26af52143713ab}\label{class_authentication_a30e32ce917ef3331fa26af52143713ab}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_authentication_1_1_user}{User}} $\ast$ $>$ {\bfseries user\+List}
+\item 
+\mbox{\Hypertarget{class_authentication_a125afe2c3032e1bc1d8658f796826fa8}\label{class_authentication_a125afe2c3032e1bc1d8658f796826fa8}} 
+bool {\bfseries logged\+In} = false
+\item 
+\mbox{\Hypertarget{class_authentication_a36c1b0d0ca94b1eb6d0437915b8596ac}\label{class_authentication_a36c1b0d0ca94b1eb6d0437915b8596ac}} 
+bool {\bfseries clicked} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class deals with the user login of the application and authenticating users. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_authentication_ae65ea0c8e08a4405f5897ffedb0985ee}\label{class_authentication_ae65ea0c8e08a4405f5897ffedb0985ee}} 
+\index{Authentication@{Authentication}!Authentication@{Authentication}}
+\index{Authentication@{Authentication}!Authentication@{Authentication}}
+\doxysubsubsection{\texorpdfstring{Authentication()}{Authentication()}}
+{\footnotesize\ttfamily Authentication\+::\+Authentication (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Creates the login popup window. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to our main window application \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_authentication_a769caf8dd9c79365cb8d1bda906a0f27}\label{class_authentication_a769caf8dd9c79365cb8d1bda906a0f27}} 
+\index{Authentication@{Authentication}!loggedin@{loggedin}}
+\index{loggedin@{loggedin}!Authentication@{Authentication}}
+\doxysubsubsection{\texorpdfstring{loggedin()}{loggedin()}}
+{\footnotesize\ttfamily bool Authentication\+::loggedin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the loggedin varaible. True is uccess, False is failure. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_authentication_a6bcc9a6288352951d2c6c9862399dad3}\label{class_authentication_a6bcc9a6288352951d2c6c9862399dad3}} 
+\index{Authentication@{Authentication}!signIn@{signIn}}
+\index{signIn@{signIn}!Authentication@{Authentication}}
+\doxysubsubsection{\texorpdfstring{signIn}{signIn}}
+{\footnotesize\ttfamily void Authentication\+::sign\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Authetnicates the user on sign in or asks to enter credentials again. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+authentication.\+h\item 
+authentication.\+cpp\end{DoxyCompactItemize}

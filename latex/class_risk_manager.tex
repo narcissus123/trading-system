@@ -1,0 +1,99 @@
+\hypertarget{class_risk_manager}{}\doxysection{Risk\+Manager Class Reference}
+\label{class_risk_manager}\index{RiskManager@{RiskManager}}
+
+
+This class recevies a pointer to our \mbox{\hyperlink{class_broker}{Broker}} object and Portoflio object and if our total balance drops below our max drawdown threshold we turn off all the strategies, stop trade execution, and close all open positions.  
+
+
+
+
+{\ttfamily \#include $<$riskmanager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_risk_manager_ae16e2ec68bda51b3f4f1c0f53a848f49}{Risk\+Manager}} (\mbox{\hyperlink{class_portfolio}{Portfolio}} $\ast$portfolio)
+\begin{DoxyCompactList}\small\item\em Constructor for our Risk Manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_risk_manager_ae8d4f7e1cd1179993b11c7b9391dbdd3}{manage\+Risk}} ()
+\begin{DoxyCompactList}\small\item\em If our max drawdown threshold is reached, we stop all strategies and close all open positions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_risk_manager_af2f94047927d6036bedb497a3f602539}{close\+All\+Open\+Positions}} ()
+\begin{DoxyCompactList}\small\item\em Closes all open positions in our \mbox{\hyperlink{class_broker}{Broker}} object by executing the opposite trade at the current price. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_risk_manager_a6bcc6e39294e3d13c55754bc8f3c69c5}\label{class_risk_manager_a6bcc6e39294e3d13c55754bc8f3c69c5}} 
+\mbox{\hyperlink{class_broker}{Broker}} $\ast$ {\bfseries broker} = \mbox{\hyperlink{class_broker_abb04fbf2f95735d0e365619e6f090398}{Broker\+::\+Get\+Instance}}()
+\item 
+\mbox{\Hypertarget{class_risk_manager_ace598d67efdea7646bc31f439d52c545}\label{class_risk_manager_ace598d67efdea7646bc31f439d52c545}} 
+\mbox{\hyperlink{class_portfolio}{Portfolio}} $\ast$ {\bfseries portfolio}
+\item 
+\mbox{\Hypertarget{class_risk_manager_a2c12183cd07af52f15d79425515e8e55}\label{class_risk_manager_a2c12183cd07af52f15d79425515e8e55}} 
+\mbox{\hyperlink{class_price_fetcher}{Price\+Fetcher}} {\bfseries price\+Fetcher}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class recevies a pointer to our \mbox{\hyperlink{class_broker}{Broker}} object and Portoflio object and if our total balance drops below our max drawdown threshold we turn off all the strategies, stop trade execution, and close all open positions. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_risk_manager_ae16e2ec68bda51b3f4f1c0f53a848f49}\label{class_risk_manager_ae16e2ec68bda51b3f4f1c0f53a848f49}} 
+\index{RiskManager@{RiskManager}!RiskManager@{RiskManager}}
+\index{RiskManager@{RiskManager}!RiskManager@{RiskManager}}
+\doxysubsubsection{\texorpdfstring{RiskManager()}{RiskManager()}}
+{\footnotesize\ttfamily Risk\+Manager\+::\+Risk\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_portfolio}{Portfolio}} $\ast$}]{portfolio }\end{DoxyParamCaption})}
+
+
+
+Constructor for our Risk Manager. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em portfolio} & Pointer to our portoflio containing our strategy \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_risk_manager_af2f94047927d6036bedb497a3f602539}\label{class_risk_manager_af2f94047927d6036bedb497a3f602539}} 
+\index{RiskManager@{RiskManager}!closeAllOpenPositions@{closeAllOpenPositions}}
+\index{closeAllOpenPositions@{closeAllOpenPositions}!RiskManager@{RiskManager}}
+\doxysubsubsection{\texorpdfstring{closeAllOpenPositions()}{closeAllOpenPositions()}}
+{\footnotesize\ttfamily void Risk\+Manager\+::close\+All\+Open\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Closes all open positions in our \mbox{\hyperlink{class_broker}{Broker}} object by executing the opposite trade at the current price. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_risk_manager_ae8d4f7e1cd1179993b11c7b9391dbdd3}\label{class_risk_manager_ae8d4f7e1cd1179993b11c7b9391dbdd3}} 
+\index{RiskManager@{RiskManager}!manageRisk@{manageRisk}}
+\index{manageRisk@{manageRisk}!RiskManager@{RiskManager}}
+\doxysubsubsection{\texorpdfstring{manageRisk()}{manageRisk()}}
+{\footnotesize\ttfamily void Risk\+Manager\+::manage\+Risk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+If our max drawdown threshold is reached, we stop all strategies and close all open positions. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+riskmanager.\+h\item 
+riskmanager.\+cpp\end{DoxyCompactItemize}

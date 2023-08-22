@@ -1,0 +1,658 @@
+\hypertarget{class_main_window}{}\doxysection{Main\+Window Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+This class creates our window and UI elements and connects them to our backend code.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_abb55ca8e60dc31a40c89ca722d46d74b}\label{class_main_window_abb55ca8e60dc31a40c89ca722d46d74b}} 
+void {\bfseries new\+Trade\+Added} ()
+\item 
+\mbox{\Hypertarget{class_main_window_a246104c234e02aac03e793328a56e2ba}\label{class_main_window_a246104c234e02aac03e793328a56e2ba}} 
+void {\bfseries new\+Position\+Opened} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Creates all main window and UI elements and periodically calls the functions to update our table elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for main window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_ab9e58b90e2f834ca7f2871b0a34ba81e}{login\+Prompt}} ()
+\begin{DoxyCompactList}\small\item\em Creates login window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a047b3fc443e7c0e480a4f64a23e634e3}{export\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Export daily historical data feature for a ticker. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_abfa9c3355786869390ed15ee568c1782}{update\+History\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Updates the historical trades table with new entries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aac348bde0a8fc3c5dedc25b442f8cb7e}{update\+Open\+Position\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Updates the open positions table with new entries. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a450e970aa6c65e39fca9dbac8d5a6b4c}{update\+Closed\+Positions\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Updates the closed positions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ac12e7530f66624bccdf18518b9d8ae34}{analyze\+All\+Strategies}} ()
+\begin{DoxyCompactList}\small\item\em Strategies in portoflio analyze conditions and execute trades if conditons are met. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_af9258c03a301bb07d66fa02d28e15706}{update\+Statistics}} ()
+\begin{DoxyCompactList}\small\item\em Updates the statistics of the portfolio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a7e510eec43127946de350b8b868b5589}{turn\+Onstrategy1}} ()
+\begin{DoxyCompactList}\small\item\em Starts/turns off strategy 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aee5ca8b3dfcf1e75830fcd55c6241b25}{turn\+On\+Strategy2}} ()
+\begin{DoxyCompactList}\small\item\em Starts/turns off strategy 2. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a50a16f2a35f884aab216b2d886bc7b6d}{turn\+On\+Strategy3}} ()
+\begin{DoxyCompactList}\small\item\em Starts/turns off strategy 3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9f81b591f9e968128b6dc7c49fe4231a}{create\+Strategy\+Labels}} ()
+\begin{DoxyCompactList}\small\item\em Creates strategy labels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a8cccfd42ed1779c6e091873420aa4f79}{create\+Statistics\+Labels}} ()
+\begin{DoxyCompactList}\small\item\em Creates statistics labels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aa292e7eb653e8bb008d88cb8c2f30b6e}{create\+Historical\+Trades\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Creates historical trades table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_adec28d86b38a4e47c4d84972c4e05fcb}{create\+Open\+Positions\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Creates open positions table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ab1ef1f4230df2ec3f61360349d993cc7}{create\+Export\+Data\+Feature}} ()
+\begin{DoxyCompactList}\small\item\em Creates export data feature. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_af20e7a7e49647a4825b465cf1afbd831}{create\+Main\+Window\+Labels}} ()
+\begin{DoxyCompactList}\small\item\em Creates main window UI labels. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ae83a20f31519c3dac5e50c37907ee156}{create\+Closed\+Positions\+Table}} ()
+\begin{DoxyCompactList}\small\item\em Creates closed positons table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aebdeb30a44737893c58cbd2a082898ff}{add\+Strategies\+To\+Portfolio\+And\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Creates strategy objects and adds them to the portfolio and starts them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a47d461aa6462dcd8e02df64eef2dc618}{export\+Trade\+History}} ()
+\begin{DoxyCompactList}\small\item\em Export trade history. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a8f43fc8e06f4b3c43e48d6505116564a}{create\+Export\+Trade\+History\+Feature}} ()
+\begin{DoxyCompactList}\small\item\em Creates export historical trades as csv feature. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a5cec2e976836504a81c953c0b9ac61c2}{create\+Export\+Closed\+Positions\+Feature}} ()
+\begin{DoxyCompactList}\small\item\em Creates export closed positions as csv feature. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a76f7e2aac24cfd69ee82f6320d49b2d7}{export\+Closed\+Positions}} ()
+\begin{DoxyCompactList}\small\item\em Export closed positions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a5bf72c652108554493460d02a8a99d5b}{create\+Chart}} ()
+\begin{DoxyCompactList}\small\item\em Creates a chart that shows the portoflio balances over time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ac19c990c646bfea56be4f0665c46ac7f}{update\+Chart}} ()
+\begin{DoxyCompactList}\small\item\em Updates the portfolio balance chart over time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a9a4f5337226605c221ff3cb183de9a2a}\label{class_main_window_a9a4f5337226605c221ff3cb183de9a2a}} 
+\mbox{\hyperlink{class_broker}{Broker}} $\ast$ {\bfseries broker} = \mbox{\hyperlink{class_broker_abb04fbf2f95735d0e365619e6f090398}{Broker\+::\+Get\+Instance}}()
+\item 
+\mbox{\Hypertarget{class_main_window_afb2eb57da58524de09734cb3b8d52aef}\label{class_main_window_afb2eb57da58524de09734cb3b8d52aef}} 
+\mbox{\hyperlink{class_portfolio}{Portfolio}} {\bfseries portfolio}
+\item 
+\mbox{\Hypertarget{class_main_window_aa77810a5c53abe57520754033fd6b102}\label{class_main_window_aa77810a5c53abe57520754033fd6b102}} 
+\mbox{\hyperlink{class_price_fetcher}{Price\+Fetcher}} {\bfseries price\+Fetcher}
+\item 
+\mbox{\Hypertarget{class_main_window_aa5eb2cfe0937f015b489e0b809de930d}\label{class_main_window_aa5eb2cfe0937f015b489e0b809de930d}} 
+\mbox{\hyperlink{class_main_window}{Main\+Window}} $\ast$ {\bfseries ui}
+\item 
+\mbox{\Hypertarget{class_main_window_a1f295f715eb8414104fa2535b08baa48}\label{class_main_window_a1f295f715eb8414104fa2535b08baa48}} 
+std\+::vector$<$ QString $>$ {\bfseries opening\+Orders\+List}
+\item 
+\mbox{\Hypertarget{class_main_window_a9d0a17701196a452b3eca209df94d3c8}\label{class_main_window_a9d0a17701196a452b3eca209df94d3c8}} 
+std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_trade}{Trade}}, std\+::string $>$ $>$ {\bfseries trade\+History}
+\item 
+\mbox{\Hypertarget{class_main_window_aa9c356c4824b3c524efef355f858da67}\label{class_main_window_aa9c356c4824b3c524efef355f858da67}} 
+std\+::vector$<$ \mbox{\hyperlink{class_trade}{Trade}} $>$ {\bfseries open\+Positions}
+\item 
+\mbox{\Hypertarget{class_main_window_ab55be8c81ce6074afc7bad252a47514a}\label{class_main_window_ab55be8c81ce6074afc7bad252a47514a}} 
+std\+::vector$<$ std\+::tuple$<$ \mbox{\hyperlink{class_trade}{Trade}}, float, float $>$ $>$ {\bfseries closed\+Positions}
+\item 
+\mbox{\Hypertarget{class_main_window_ab57da0128225041d01cac1d5d92e8755}\label{class_main_window_ab57da0128225041d01cac1d5d92e8755}} 
+int {\bfseries number\+Of\+Trades}
+\item 
+\mbox{\Hypertarget{class_main_window_a3f9817b64cf3170de5cc86b98ac0148e}\label{class_main_window_a3f9817b64cf3170de5cc86b98ac0148e}} 
+QTable\+Widget $\ast$ {\bfseries trade\+History\+Table}
+\item 
+\mbox{\Hypertarget{class_main_window_ac0723e900707d6e1da7be8725fc21a2d}\label{class_main_window_ac0723e900707d6e1da7be8725fc21a2d}} 
+QTable\+Widget $\ast$ {\bfseries open\+Positions\+Table}
+\item 
+\mbox{\Hypertarget{class_main_window_aa426c9bdc0dbb790ed55f803da15c533}\label{class_main_window_aa426c9bdc0dbb790ed55f803da15c533}} 
+QTable\+Widget $\ast$ {\bfseries closed\+Positions\+Table}
+\item 
+\mbox{\Hypertarget{class_main_window_ac6fad04e9922962a94825044b786dadc}\label{class_main_window_ac6fad04e9922962a94825044b786dadc}} 
+std\+::string {\bfseries ticker}
+\item 
+\mbox{\Hypertarget{class_main_window_afdf4243daa9a2c824628178f0fbeada0}\label{class_main_window_afdf4243daa9a2c824628178f0fbeada0}} 
+int {\bfseries num\+\_\+shares}
+\item 
+\mbox{\Hypertarget{class_main_window_a8a533d592e881d3f9c4d4071aa8f33bd}\label{class_main_window_a8a533d592e881d3f9c4d4071aa8f33bd}} 
+int {\bfseries action}
+\item 
+\mbox{\Hypertarget{class_main_window_a0a9ca047ea77cad7dec6b8175f1d4232}\label{class_main_window_a0a9ca047ea77cad7dec6b8175f1d4232}} 
+double {\bfseries price}
+\item 
+\mbox{\Hypertarget{class_main_window_a84d0694a8db83c129259a814b891bec6}\label{class_main_window_a84d0694a8db83c129259a814b891bec6}} 
+float {\bfseries pnl}
+\item 
+\mbox{\Hypertarget{class_main_window_a6cd89b4ee4101e18366b5caeaabab9d4}\label{class_main_window_a6cd89b4ee4101e18366b5caeaabab9d4}} 
+float {\bfseries ret}
+\item 
+\mbox{\Hypertarget{class_main_window_abdaa84ebb973f774ea57a14d33e081f1}\label{class_main_window_abdaa84ebb973f774ea57a14d33e081f1}} 
+std\+::string {\bfseries datetime}
+\item 
+\mbox{\Hypertarget{class_main_window_a1a0f6ccbb40de07797a945ce7464cdc9}\label{class_main_window_a1a0f6ccbb40de07797a945ce7464cdc9}} 
+std\+::string {\bfseries order\+\_\+type}
+\item 
+\mbox{\Hypertarget{class_main_window_a8a5e9f1656a2612c8c7fdc3bdb659e5f}\label{class_main_window_a8a5e9f1656a2612c8c7fdc3bdb659e5f}} 
+QTable\+Widget\+Item $\ast$ {\bfseries new\+Item}
+\item 
+\mbox{\Hypertarget{class_main_window_a91f23126ce240378be9f25ce86aa58cf}\label{class_main_window_a91f23126ce240378be9f25ce86aa58cf}} 
+bool {\bfseries strategy1\+On} = false
+\item 
+\mbox{\Hypertarget{class_main_window_a9a806f54d219959019fb3f7cc666523f}\label{class_main_window_a9a806f54d219959019fb3f7cc666523f}} 
+bool {\bfseries strategy2\+On} = false
+\item 
+\mbox{\Hypertarget{class_main_window_a37bced2bc65bdf7af5f8c58720a2d178}\label{class_main_window_a37bced2bc65bdf7af5f8c58720a2d178}} 
+bool {\bfseries strategy3\+On} = false
+\item 
+\mbox{\Hypertarget{class_main_window_a50f106794e1348b056b7f6571d626d2e}\label{class_main_window_a50f106794e1348b056b7f6571d626d2e}} 
+QPush\+Button $\ast$ {\bfseries strategy1\+Butt}
+\item 
+\mbox{\Hypertarget{class_main_window_af7cd8888a03f6a29a798cecc79ebb193}\label{class_main_window_af7cd8888a03f6a29a798cecc79ebb193}} 
+QPush\+Button $\ast$ {\bfseries strategy2\+Butt}
+\item 
+\mbox{\Hypertarget{class_main_window_a85219f06781e92a0f32ff902fb39066a}\label{class_main_window_a85219f06781e92a0f32ff902fb39066a}} 
+QPush\+Button $\ast$ {\bfseries strategy3\+Butt}
+\item 
+\mbox{\Hypertarget{class_main_window_a5a85bdb78000861ce95307a80cd5c482}\label{class_main_window_a5a85bdb78000861ce95307a80cd5c482}} 
+QLine\+Edit $\ast$ {\bfseries startdate\+Field}
+\item 
+\mbox{\Hypertarget{class_main_window_aabd5d3d420e717a50d27cc8d82a99a05}\label{class_main_window_aabd5d3d420e717a50d27cc8d82a99a05}} 
+QLine\+Edit $\ast$ {\bfseries enddate\+Field}
+\item 
+\mbox{\Hypertarget{class_main_window_a58ca157d3626c377ddb702691194d76f}\label{class_main_window_a58ca157d3626c377ddb702691194d76f}} 
+QLine\+Edit $\ast$ {\bfseries ticker\+Field}
+\item 
+\mbox{\Hypertarget{class_main_window_adbe48ee133e7c04c8337791e00855c48}\label{class_main_window_adbe48ee133e7c04c8337791e00855c48}} 
+QPush\+Button $\ast$ {\bfseries log\+In\+Butt}
+\item 
+\mbox{\Hypertarget{class_main_window_aef9e2aad2836eca19ad99169ba067332}\label{class_main_window_aef9e2aad2836eca19ad99169ba067332}} 
+bool {\bfseries logged\+In} = false
+\item 
+\mbox{\Hypertarget{class_main_window_ade6475b97c136a34181f8c493d2e1d37}\label{class_main_window_ade6475b97c136a34181f8c493d2e1d37}} 
+\mbox{\hyperlink{class_authentication}{Authentication}} {\bfseries auth}
+\item 
+\mbox{\Hypertarget{class_main_window_a44a17f4e1e8c1b29d898719100207d13}\label{class_main_window_a44a17f4e1e8c1b29d898719100207d13}} 
+QString {\bfseries user}
+\item 
+\mbox{\Hypertarget{class_main_window_a64bcc68dc5395aaa6aaf7b75989ba12e}\label{class_main_window_a64bcc68dc5395aaa6aaf7b75989ba12e}} 
+QLabel $\ast$ {\bfseries Portfolio1\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a2099f9c6014413a7699e97fdec272985}\label{class_main_window_a2099f9c6014413a7699e97fdec272985}} 
+QLabel $\ast$ {\bfseries Strategy1\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a30682bc4ae81b468337fe71f47730a67}\label{class_main_window_a30682bc4ae81b468337fe71f47730a67}} 
+QLabel $\ast$ {\bfseries Strategy2\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_af68fd4e70cb58b0685d4a2909e647a87}\label{class_main_window_af68fd4e70cb58b0685d4a2909e647a87}} 
+QLabel $\ast$ {\bfseries Strategy3\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a0ca350a667e35b451cb96d97f1a17b2e}\label{class_main_window_a0ca350a667e35b451cb96d97f1a17b2e}} 
+QLabel $\ast$ {\bfseries statistics\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a30e571bdcc4c21c559363efbb586abf2}\label{class_main_window_a30e571bdcc4c21c559363efbb586abf2}} 
+QLabel $\ast$ {\bfseries sortino\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_abdc7fde9990e46c3a47f09d20497b37e}\label{class_main_window_abdc7fde9990e46c3a47f09d20497b37e}} 
+QLine\+Edit $\ast$ {\bfseries sortino\+Ratio}
+\item 
+\mbox{\Hypertarget{class_main_window_a548d0c6a641cc1fe3342889d817023d2}\label{class_main_window_a548d0c6a641cc1fe3342889d817023d2}} 
+QLabel $\ast$ {\bfseries sharpe\+Ratio\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a4af5ef67cad681b82bf1035a0387341d}\label{class_main_window_a4af5ef67cad681b82bf1035a0387341d}} 
+QLine\+Edit $\ast$ {\bfseries sharpe\+Ratio}
+\item 
+\mbox{\Hypertarget{class_main_window_abb9bba786a11fbe1324743200a515367}\label{class_main_window_abb9bba786a11fbe1324743200a515367}} 
+QLabel $\ast$ {\bfseries Drawdown\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a3c50313c32ce75f3b7121658f940eb1d}\label{class_main_window_a3c50313c32ce75f3b7121658f940eb1d}} 
+QLine\+Edit $\ast$ {\bfseries max\+Drawdown}
+\item 
+\mbox{\Hypertarget{class_main_window_ac55cf2f5d4dfb24fd8f4c4fc3515cdcb}\label{class_main_window_ac55cf2f5d4dfb24fd8f4c4fc3515cdcb}} 
+QLabel $\ast$ {\bfseries trade\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_ab9a7049ad895d4ccf5848cc6108a2409}\label{class_main_window_ab9a7049ad895d4ccf5848cc6108a2409}} 
+QLabel $\ast$ {\bfseries closed\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a05da00af4d9b9b8509dee8adef4d64db}\label{class_main_window_a05da00af4d9b9b8509dee8adef4d64db}} 
+QLabel $\ast$ {\bfseries open\+Position\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a985f626cabb15da7c9ca25fd59e08aeb}\label{class_main_window_a985f626cabb15da7c9ca25fd59e08aeb}} 
+QLabel $\ast$ {\bfseries export\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a48416392e96ccd2a30ff3a08b12a2459}\label{class_main_window_a48416392e96ccd2a30ff3a08b12a2459}} 
+QLabel $\ast$ {\bfseries startdate\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a38bcdbf2798a1788ff83efb21c4b4fd1}\label{class_main_window_a38bcdbf2798a1788ff83efb21c4b4fd1}} 
+QLabel $\ast$ {\bfseries enddate\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_ad417546be474a11833f4d59d239bdbe5}\label{class_main_window_ad417546be474a11833f4d59d239bdbe5}} 
+QLabel $\ast$ {\bfseries ticker\+Label}
+\item 
+\mbox{\Hypertarget{class_main_window_a862b6f5f57747d37fea88b080f4eabbb}\label{class_main_window_a862b6f5f57747d37fea88b080f4eabbb}} 
+QPush\+Button $\ast$ {\bfseries export\+Submit\+Button}
+\item 
+\mbox{\Hypertarget{class_main_window_ac775a4fa15e760515fc60f3487693910}\label{class_main_window_ac775a4fa15e760515fc60f3487693910}} 
+QPush\+Button $\ast$ {\bfseries export\+As\+CSV1}
+\item 
+\mbox{\Hypertarget{class_main_window_a8589f425228149ed6a5124cd361b96ca}\label{class_main_window_a8589f425228149ed6a5124cd361b96ca}} 
+QPush\+Button $\ast$ {\bfseries export\+As\+CSV2}
+\item 
+\mbox{\Hypertarget{class_main_window_a80ac567da32dd10ac61c72278ece73c4}\label{class_main_window_a80ac567da32dd10ac61c72278ece73c4}} 
+QFrame $\ast$ {\bfseries line}
+\item 
+\mbox{\Hypertarget{class_main_window_a5017408a5211f7098cea1bab3eee5d7f}\label{class_main_window_a5017408a5211f7098cea1bab3eee5d7f}} 
+QFrame $\ast$ {\bfseries line1}
+\item 
+\mbox{\Hypertarget{class_main_window_a8630aa78a09534ac6fe4caf5a99b5b90}\label{class_main_window_a8630aa78a09534ac6fe4caf5a99b5b90}} 
+QLine\+Edit $\ast$ {\bfseries Brand}
+\item 
+\mbox{\Hypertarget{class_main_window_ae675356d5439971319747d820b57458f}\label{class_main_window_ae675356d5439971319747d820b57458f}} 
+\mbox{\hyperlink{class_momentum_trading_strategy}{Momentum\+Trading\+Strategy}} $\ast$ {\bfseries strategy1}
+\item 
+\mbox{\Hypertarget{class_main_window_a3888d46cd57a89d62752631821284e9d}\label{class_main_window_a3888d46cd57a89d62752631821284e9d}} 
+\mbox{\hyperlink{class_regression_trading_strategy}{Regression\+Trading\+Strategy}} $\ast$ {\bfseries strategy2}
+\item 
+\mbox{\Hypertarget{class_main_window_a37f10ea3824c42499ef1f11b2ec52f5f}\label{class_main_window_a37f10ea3824c42499ef1f11b2ec52f5f}} 
+\mbox{\hyperlink{class_momentum_trading_strategy}{Momentum\+Trading\+Strategy}} $\ast$ {\bfseries strategy3}
+\item 
+\mbox{\Hypertarget{class_main_window_a57e84ba31d19b759dfe0909fd474cf2c}\label{class_main_window_a57e84ba31d19b759dfe0909fd474cf2c}} 
+QHeader\+View $\ast$ {\bfseries header}
+\item 
+\mbox{\Hypertarget{class_main_window_a3fe41f570f6f6f654e7ef950a8474f68}\label{class_main_window_a3fe41f570f6f6f654e7ef950a8474f68}} 
+QChart $\ast$ {\bfseries chart}
+\item 
+\mbox{\Hypertarget{class_main_window_adc9f07ac05f594873adae8a20373a50f}\label{class_main_window_adc9f07ac05f594873adae8a20373a50f}} 
+QLine\+Series $\ast$ {\bfseries total\+Equity}
+\item 
+\mbox{\Hypertarget{class_main_window_a1a11e9a22e6f52f73e98c196f3808adf}\label{class_main_window_a1a11e9a22e6f52f73e98c196f3808adf}} 
+QLine\+Series $\ast$ {\bfseries cash\+Balance}
+\item 
+\mbox{\Hypertarget{class_main_window_a3336f315fe81c6b25f72407c5e3224bf}\label{class_main_window_a3336f315fe81c6b25f72407c5e3224bf}} 
+QLine\+Series $\ast$ {\bfseries stock\+Position}
+\item 
+\mbox{\Hypertarget{class_main_window_a65fb64a7b9a722f77bfc022a9f4b5e8b}\label{class_main_window_a65fb64a7b9a722f77bfc022a9f4b5e8b}} 
+QChart\+View $\ast$ {\bfseries chart\+View}
+\item 
+\mbox{\Hypertarget{class_main_window_a80f08e92412c47b1479adaa2cdaf71fa}\label{class_main_window_a80f08e92412c47b1479adaa2cdaf71fa}} 
+QVBox\+Layout $\ast$ {\bfseries layout}
+\item 
+\mbox{\Hypertarget{class_main_window_a98c7b4e6265531bd8f85742d915c55f4}\label{class_main_window_a98c7b4e6265531bd8f85742d915c55f4}} 
+QValue\+Axis $\ast$ {\bfseries axisX}
+\item 
+\mbox{\Hypertarget{class_main_window_a06c28099629af583342bd6be9716ccf3}\label{class_main_window_a06c28099629af583342bd6be9716ccf3}} 
+QValue\+Axis $\ast$ {\bfseries axisY}
+\item 
+\mbox{\Hypertarget{class_main_window_a0cfb67a459d475a63b12312cf168bce8}\label{class_main_window_a0cfb67a459d475a63b12312cf168bce8}} 
+int {\bfseries old\+\_\+x} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class creates our window and UI elements and connects them to our backend code. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri, Hamid Zargar, Andrew Raycroft, Alaa AL 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Creates all main window and UI elements and periodically calls the functions to update our table elements. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for main window. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_aebdeb30a44737893c58cbd2a082898ff}\label{class_main_window_aebdeb30a44737893c58cbd2a082898ff}} 
+\index{MainWindow@{MainWindow}!addStrategiesToPortfolioAndStart@{addStrategiesToPortfolioAndStart}}
+\index{addStrategiesToPortfolioAndStart@{addStrategiesToPortfolioAndStart}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{addStrategiesToPortfolioAndStart}{addStrategiesToPortfolioAndStart}}
+{\footnotesize\ttfamily void Main\+Window\+::add\+Strategies\+To\+Portfolio\+And\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates strategy objects and adds them to the portfolio and starts them. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_ac12e7530f66624bccdf18518b9d8ae34}\label{class_main_window_ac12e7530f66624bccdf18518b9d8ae34}} 
+\index{MainWindow@{MainWindow}!analyzeAllStrategies@{analyzeAllStrategies}}
+\index{analyzeAllStrategies@{analyzeAllStrategies}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{analyzeAllStrategies}{analyzeAllStrategies}}
+{\footnotesize\ttfamily void Main\+Window\+::analyze\+All\+Strategies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Strategies in portoflio analyze conditions and execute trades if conditons are met. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a5bf72c652108554493460d02a8a99d5b}\label{class_main_window_a5bf72c652108554493460d02a8a99d5b}} 
+\index{MainWindow@{MainWindow}!createChart@{createChart}}
+\index{createChart@{createChart}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createChart}{createChart}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Chart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates a chart that shows the portoflio balances over time. 
+
+\begin{DoxyAuthor}{Author}
+Andrew Raycroft 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_ae83a20f31519c3dac5e50c37907ee156}\label{class_main_window_ae83a20f31519c3dac5e50c37907ee156}} 
+\index{MainWindow@{MainWindow}!createClosedPositionsTable@{createClosedPositionsTable}}
+\index{createClosedPositionsTable@{createClosedPositionsTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createClosedPositionsTable}{createClosedPositionsTable}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Closed\+Positions\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates closed positons table. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a5cec2e976836504a81c953c0b9ac61c2}\label{class_main_window_a5cec2e976836504a81c953c0b9ac61c2}} 
+\index{MainWindow@{MainWindow}!createExportClosedPositionsFeature@{createExportClosedPositionsFeature}}
+\index{createExportClosedPositionsFeature@{createExportClosedPositionsFeature}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createExportClosedPositionsFeature}{createExportClosedPositionsFeature}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Export\+Closed\+Positions\+Feature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates export closed positions as csv feature. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_ab1ef1f4230df2ec3f61360349d993cc7}\label{class_main_window_ab1ef1f4230df2ec3f61360349d993cc7}} 
+\index{MainWindow@{MainWindow}!createExportDataFeature@{createExportDataFeature}}
+\index{createExportDataFeature@{createExportDataFeature}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createExportDataFeature}{createExportDataFeature}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Export\+Data\+Feature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates export data feature. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a8f43fc8e06f4b3c43e48d6505116564a}\label{class_main_window_a8f43fc8e06f4b3c43e48d6505116564a}} 
+\index{MainWindow@{MainWindow}!createExportTradeHistoryFeature@{createExportTradeHistoryFeature}}
+\index{createExportTradeHistoryFeature@{createExportTradeHistoryFeature}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createExportTradeHistoryFeature}{createExportTradeHistoryFeature}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Export\+Trade\+History\+Feature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates export historical trades as csv feature. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_aa292e7eb653e8bb008d88cb8c2f30b6e}\label{class_main_window_aa292e7eb653e8bb008d88cb8c2f30b6e}} 
+\index{MainWindow@{MainWindow}!createHistoricalTradesTable@{createHistoricalTradesTable}}
+\index{createHistoricalTradesTable@{createHistoricalTradesTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createHistoricalTradesTable}{createHistoricalTradesTable}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Historical\+Trades\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates historical trades table. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_af20e7a7e49647a4825b465cf1afbd831}\label{class_main_window_af20e7a7e49647a4825b465cf1afbd831}} 
+\index{MainWindow@{MainWindow}!createMainWindowLabels@{createMainWindowLabels}}
+\index{createMainWindowLabels@{createMainWindowLabels}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createMainWindowLabels}{createMainWindowLabels}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Main\+Window\+Labels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates main window UI labels. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_adec28d86b38a4e47c4d84972c4e05fcb}\label{class_main_window_adec28d86b38a4e47c4d84972c4e05fcb}} 
+\index{MainWindow@{MainWindow}!createOpenPositionsTable@{createOpenPositionsTable}}
+\index{createOpenPositionsTable@{createOpenPositionsTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createOpenPositionsTable}{createOpenPositionsTable}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Open\+Positions\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates open positions table. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a8cccfd42ed1779c6e091873420aa4f79}\label{class_main_window_a8cccfd42ed1779c6e091873420aa4f79}} 
+\index{MainWindow@{MainWindow}!createStatisticsLabels@{createStatisticsLabels}}
+\index{createStatisticsLabels@{createStatisticsLabels}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createStatisticsLabels}{createStatisticsLabels}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Statistics\+Labels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates statistics labels. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a9f81b591f9e968128b6dc7c49fe4231a}\label{class_main_window_a9f81b591f9e968128b6dc7c49fe4231a}} 
+\index{MainWindow@{MainWindow}!createStrategyLabels@{createStrategyLabels}}
+\index{createStrategyLabels@{createStrategyLabels}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{createStrategyLabels}{createStrategyLabels}}
+{\footnotesize\ttfamily void Main\+Window\+::create\+Strategy\+Labels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates strategy labels. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a76f7e2aac24cfd69ee82f6320d49b2d7}\label{class_main_window_a76f7e2aac24cfd69ee82f6320d49b2d7}} 
+\index{MainWindow@{MainWindow}!exportClosedPositions@{exportClosedPositions}}
+\index{exportClosedPositions@{exportClosedPositions}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{exportClosedPositions}{exportClosedPositions}}
+{\footnotesize\ttfamily void Main\+Window\+::export\+Closed\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Export closed positions. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a047b3fc443e7c0e480a4f64a23e634e3}\label{class_main_window_a047b3fc443e7c0e480a4f64a23e634e3}} 
+\index{MainWindow@{MainWindow}!exportData@{exportData}}
+\index{exportData@{exportData}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{exportData}{exportData}}
+{\footnotesize\ttfamily void Main\+Window\+::export\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Export daily historical data feature for a ticker. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a47d461aa6462dcd8e02df64eef2dc618}\label{class_main_window_a47d461aa6462dcd8e02df64eef2dc618}} 
+\index{MainWindow@{MainWindow}!exportTradeHistory@{exportTradeHistory}}
+\index{exportTradeHistory@{exportTradeHistory}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{exportTradeHistory}{exportTradeHistory}}
+{\footnotesize\ttfamily void Main\+Window\+::export\+Trade\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Export trade history. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_ab9e58b90e2f834ca7f2871b0a34ba81e}\label{class_main_window_ab9e58b90e2f834ca7f2871b0a34ba81e}} 
+\index{MainWindow@{MainWindow}!loginPrompt@{loginPrompt}}
+\index{loginPrompt@{loginPrompt}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{loginPrompt}{loginPrompt}}
+{\footnotesize\ttfamily void Main\+Window\+::login\+Prompt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Creates login window. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a7e510eec43127946de350b8b868b5589}\label{class_main_window_a7e510eec43127946de350b8b868b5589}} 
+\index{MainWindow@{MainWindow}!turnOnstrategy1@{turnOnstrategy1}}
+\index{turnOnstrategy1@{turnOnstrategy1}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{turnOnstrategy1}{turnOnstrategy1}}
+{\footnotesize\ttfamily void Main\+Window\+::turn\+Onstrategy1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Starts/turns off strategy 1. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_aee5ca8b3dfcf1e75830fcd55c6241b25}\label{class_main_window_aee5ca8b3dfcf1e75830fcd55c6241b25}} 
+\index{MainWindow@{MainWindow}!turnOnStrategy2@{turnOnStrategy2}}
+\index{turnOnStrategy2@{turnOnStrategy2}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{turnOnStrategy2}{turnOnStrategy2}}
+{\footnotesize\ttfamily void Main\+Window\+::turn\+On\+Strategy2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Starts/turns off strategy 2. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a50a16f2a35f884aab216b2d886bc7b6d}\label{class_main_window_a50a16f2a35f884aab216b2d886bc7b6d}} 
+\index{MainWindow@{MainWindow}!turnOnStrategy3@{turnOnStrategy3}}
+\index{turnOnStrategy3@{turnOnStrategy3}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{turnOnStrategy3}{turnOnStrategy3}}
+{\footnotesize\ttfamily void Main\+Window\+::turn\+On\+Strategy3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Starts/turns off strategy 3. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_ac19c990c646bfea56be4f0665c46ac7f}\label{class_main_window_ac19c990c646bfea56be4f0665c46ac7f}} 
+\index{MainWindow@{MainWindow}!updateChart@{updateChart}}
+\index{updateChart@{updateChart}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateChart}{updateChart}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Chart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Updates the portfolio balance chart over time. 
+
+\begin{DoxyAuthor}{Author}
+Andrew Raycroft 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_a450e970aa6c65e39fca9dbac8d5a6b4c}\label{class_main_window_a450e970aa6c65e39fca9dbac8d5a6b4c}} 
+\index{MainWindow@{MainWindow}!updateClosedPositionsTable@{updateClosedPositionsTable}}
+\index{updateClosedPositionsTable@{updateClosedPositionsTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateClosedPositionsTable}{updateClosedPositionsTable}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Closed\+Positions\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Updates the closed positions. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_abfa9c3355786869390ed15ee568c1782}\label{class_main_window_abfa9c3355786869390ed15ee568c1782}} 
+\index{MainWindow@{MainWindow}!updateHistoryTable@{updateHistoryTable}}
+\index{updateHistoryTable@{updateHistoryTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateHistoryTable}{updateHistoryTable}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+History\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Updates the historical trades table with new entries. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_aac348bde0a8fc3c5dedc25b442f8cb7e}\label{class_main_window_aac348bde0a8fc3c5dedc25b442f8cb7e}} 
+\index{MainWindow@{MainWindow}!updateOpenPositionTable@{updateOpenPositionTable}}
+\index{updateOpenPositionTable@{updateOpenPositionTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateOpenPositionTable}{updateOpenPositionTable}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Open\+Position\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Updates the open positions table with new entries. 
+
+\begin{DoxyAuthor}{Author}
+Narges Haeri 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_main_window_af9258c03a301bb07d66fa02d28e15706}\label{class_main_window_af9258c03a301bb07d66fa02d28e15706}} 
+\index{MainWindow@{MainWindow}!updateStatistics@{updateStatistics}}
+\index{updateStatistics@{updateStatistics}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateStatistics}{updateStatistics}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Updates the statistics of the portfolio. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

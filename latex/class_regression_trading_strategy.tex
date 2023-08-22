@@ -1,0 +1,128 @@
+\hypertarget{class_regression_trading_strategy}{}\doxysection{Regression\+Trading\+Strategy Class Reference}
+\label{class_regression_trading_strategy}\index{RegressionTradingStrategy@{RegressionTradingStrategy}}
+
+
+This class creates a regression to the mean trading strategy that executes trades in the direction of their previous days movement.  
+
+
+
+
+{\ttfamily \#include $<$regression\+\_\+trading\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for Regression\+Trading\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_regression_trading_strategy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_regression_trading_strategy_aca0c63e4cd63c7a1c676577fd894476d}{Regression\+Trading\+Strategy}} (const std\+::string \&ticker, int strategy\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Constructor for regression trading strategy class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_regression_trading_strategy_a3d8fbd9fb943f42f0788e6a0292a8e2d}{analyze}} ()
+\begin{DoxyCompactList}\small\item\em Executes the trade using our \mbox{\hyperlink{class_broker}{Broker}} object pointer if the price conditions are met. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_regression_trading_strategy_a74ce1a5f486511e71c57e0c1e4fb4e5a}{$\sim$\+Regression\+Trading\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to deallocate memory. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_regression_trading_strategy_a99e24fc427a56525dbb0e1381fa07c43}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em The strategy name for this type of strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_regression_trading_strategy_a602c81798c425658fde9499a3ac595d0}\label{class_regression_trading_strategy_a602c81798c425658fde9499a3ac595d0}} 
+std\+::string {\bfseries ticker}
+\item 
+\mbox{\Hypertarget{class_regression_trading_strategy_a86946ff9c8eabcff21908d8558242254}\label{class_regression_trading_strategy_a86946ff9c8eabcff21908d8558242254}} 
+int {\bfseries strategy\+\_\+id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class creates a regression to the mean trading strategy that executes trades in the direction of their previous days movement. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_regression_trading_strategy_aca0c63e4cd63c7a1c676577fd894476d}\label{class_regression_trading_strategy_aca0c63e4cd63c7a1c676577fd894476d}} 
+\index{RegressionTradingStrategy@{RegressionTradingStrategy}!RegressionTradingStrategy@{RegressionTradingStrategy}}
+\index{RegressionTradingStrategy@{RegressionTradingStrategy}!RegressionTradingStrategy@{RegressionTradingStrategy}}
+\doxysubsubsection{\texorpdfstring{RegressionTradingStrategy()}{RegressionTradingStrategy()}}
+{\footnotesize\ttfamily Regression\+Trading\+Strategy\+::\+Regression\+Trading\+Strategy (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ticker,  }\item[{int}]{strategy\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Constructor for regression trading strategy class. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ticker} & Represents the stock ticker we want to employ the strategy on. \\
+\hline
+{\em strategy\+\_\+id} & Represents the id we will assign to the strategy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_regression_trading_strategy_a74ce1a5f486511e71c57e0c1e4fb4e5a}\label{class_regression_trading_strategy_a74ce1a5f486511e71c57e0c1e4fb4e5a}} 
+\index{RegressionTradingStrategy@{RegressionTradingStrategy}!````~RegressionTradingStrategy@{$\sim$RegressionTradingStrategy}}
+\index{````~RegressionTradingStrategy@{$\sim$RegressionTradingStrategy}!RegressionTradingStrategy@{RegressionTradingStrategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$RegressionTradingStrategy()}{~RegressionTradingStrategy()}}
+{\footnotesize\ttfamily Regression\+Trading\+Strategy\+::$\sim$\+Regression\+Trading\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destructor to deallocate memory. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_regression_trading_strategy_a3d8fbd9fb943f42f0788e6a0292a8e2d}\label{class_regression_trading_strategy_a3d8fbd9fb943f42f0788e6a0292a8e2d}} 
+\index{RegressionTradingStrategy@{RegressionTradingStrategy}!analyze@{analyze}}
+\index{analyze@{analyze}!RegressionTradingStrategy@{RegressionTradingStrategy}}
+\doxysubsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily void Regression\+Trading\+Strategy\+::analyze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the trade using our \mbox{\hyperlink{class_broker}{Broker}} object pointer if the price conditions are met. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}}.
+
+\mbox{\Hypertarget{class_regression_trading_strategy_a99e24fc427a56525dbb0e1381fa07c43}\label{class_regression_trading_strategy_a99e24fc427a56525dbb0e1381fa07c43}} 
+\index{RegressionTradingStrategy@{RegressionTradingStrategy}!getName@{getName}}
+\index{getName@{getName}!RegressionTradingStrategy@{RegressionTradingStrategy}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Regression\+Trading\+Strategy\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The strategy name for this type of strategy. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The strategy name \char`\"{}\+Regression Strategy\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+regression\+\_\+trading\+\_\+strategy.\+h\item 
+regression\+\_\+trading\+\_\+strategy.\+cpp\end{DoxyCompactItemize}

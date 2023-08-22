@@ -1,0 +1,40 @@
+\hypertarget{tradingstrategy_8h_source}{}\doxysection{tradingstrategy.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef tradingstrategy\_h}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define tradingstrategy\_h}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}trade.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}pricefetcher.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}broker.h"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_trading_strategy}{TradingStrategy}}\{}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \mbox{\hyperlink{class_broker}{Broker}}* broker = \mbox{\hyperlink{class_broker_abb04fbf2f95735d0e365619e6f090398}{Broker::GetInstance}}();}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_price_fetcher}{PriceFetcher}} price\_fetcher = \mbox{\hyperlink{class_price_fetcher}{PriceFetcher}}();}
+\DoxyCodeLine{23     std::string ticker;}
+\DoxyCodeLine{24     std::vector<Trade> local\_history;}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int} strategy\_id;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \mbox{\hyperlink{class_trading_strategy_a25dff1fe805896ae9e985b042664e3f8}{TradingStrategy}}(std::string ticker, \textcolor{keywordtype}{int} strategy\_id);                      \textcolor{comment}{//constructor of class TradingStrategy}}
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} analyze() = 0;             \textcolor{comment}{//method for analysing trade}}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} std::string getName() = 0;}
+\DoxyCodeLine{32     \mbox{\hyperlink{class_trade}{Trade}} \mbox{\hyperlink{class_trading_strategy_a631f959188d7609e68b81a9cf1cba311}{createTrade}}(\textcolor{keywordtype}{int} num\_shares, \textcolor{keywordtype}{int} action);                    \textcolor{comment}{//opening new position}}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_trading_strategy_a7e609a7495d7bdb8ea4d4bc82ce536db}{addToLocalHistory}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_trade}{Trade}}\& trade);               \textcolor{comment}{//adding the trade to history}}
+\DoxyCodeLine{34     std::vector<Trade> \mbox{\hyperlink{class_trading_strategy_a520f68f9afd500893c1d506e59cfe50d}{getLocalHistory}}();          \textcolor{comment}{//getting the list of all open and close positions}}
+\DoxyCodeLine{35     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_trading_strategy_aab4c9c86553ad820ccc52fda3412d32b}{\string~TradingStrategy}}();             \textcolor{comment}{//destructor of class TradingStrategy}}
+\DoxyCodeLine{36     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_trading_strategy_aa6fa9a8dbfb69a718a3dcf8cd8425cb9}{getStrategyID}}();}
+\DoxyCodeLine{37     std::string \mbox{\hyperlink{class_trading_strategy_ab1f39332bab3edc260603c416f6b799d}{getTicker}}();}
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* tradingstrategy\_h */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

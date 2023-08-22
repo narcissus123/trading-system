@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+4969e17068533ff45c47d70ededc80bb CMakeFiles/tradingsystemGUI_autogen
+92f49423453dd138a2fad5e820f043b2 yahoo-finance-master/CMakeFiles/example_autogen
+9ca5d5028fbcf6cfd62f460bf202154e yahoo-finance-master/CMakeFiles/yahoo-finance_autogen
+109d6374d0bdaed7353c732a4004a357 yahoo-finance-master/doc/CMakeFiles/doc

@@ -1,0 +1,119 @@
+{
+	"BUILD_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/yahoo-finance_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master",
+	"CMAKE_EXECUTABLE" : "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/CMakeLists.txt"
+	],
+	"CMAKE_SOURCE_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/curl_utils.hpp",
+			"MU",
+			"UVLADIE3JM/moc_curl_utils.cpp",
+			null
+		],
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/quote.hpp",
+			"MU",
+			"UVLADIE3JM/moc_quote.cpp",
+			null
+		],
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/spot.hpp",
+			"MU",
+			"UVLADIE3JM/moc_spot.cpp",
+			null
+		],
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/time_utils.hpp",
+			"MU",
+			"UVLADIE3JM/moc_time_utils.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/yahoo-finance_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/yahoo-finance_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master",
+		"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master",
+		"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src",
+		"/usr/local/include",
+		"/usr/local/lib",
+		"/Library/Developer/CommandLineTools/usr/include/c++/v1",
+		"/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include",
+		"/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include",
+		"/Library/Developer/CommandLineTools/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/Library/Developer/CommandLineTools/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/yahoo-finance_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/CMakeFiles/yahoo-finance_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/local/share/qt/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/local/share/qt/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 2,
+	"SETTINGS_FILE" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/CMakeFiles/yahoo-finance_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/curl_utils.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/example.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/quote.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/spot.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/time_utils.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

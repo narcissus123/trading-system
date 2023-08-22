@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TWSAPICPP_TEST"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\TwsApiCpp-master\;CMake Files\TwsApiCpp-master\TwsApiC++\;CMake Files\TwsApiCpp-master\TwsApiC++\Api\;CMake Files\TwsApiCpp-master\TwsApiC++\Test\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\yahoo-finance-master\;CMake Files\cmake-build-debug\yahoo-finance-master\test\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\;CMake Files\yahoo-finance-master\;CMake Files\yahoo-finance-master\doc\;CMake Files\yahoo-finance-master\test\;CMake Files\yahoo-finance-master\test\gtest\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Clients">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Clients" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-D_DEBUG"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/../source/PosixClient/Shared"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 Clients"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Clients/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Clients" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-D_DEBUG"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/../source/PosixClient/Shared"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 Clients/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Bars">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Bars" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-D_DEBUG"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/../source/PosixClient/Shared"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 Bars"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Bars/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Bars" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-D_DEBUG"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/../source/PosixClient/Shared"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 Bars/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="History">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/History" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-D_DEBUG"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/../source/PosixClient/Shared"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 History"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="History/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/History" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-D_DEBUG"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/../source/PosixClient/Shared"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 History/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-D_DEBUG"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/../source/PosixClient/Shared"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 Test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D_REENTRANT"/>
+					<Add option="-D_DEBUG"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Api"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/../source/PosixClient/Shared"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 Test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/TwsApiCpp-master/TwsApiC++/Test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Test/Src/Bars.cpp">
+			<Option target="Bars"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Test/Src/Clients.cpp">
+			<Option target="Clients"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Test/Src/History.cpp">
+			<Option target="History"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Test/Src/Test.cpp">
+			<Option target="Test"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\TwsApiCpp-master\TwsApiC++\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Api/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\TwsApiCpp-master\TwsApiC++\Api\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/TwsApiCpp-master/TwsApiC++/Test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\TwsApiCpp-master\TwsApiC++\Test\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\doc\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\test\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/test/gtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\test\gtest\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

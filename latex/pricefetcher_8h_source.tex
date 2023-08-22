@@ -1,0 +1,33 @@
+\hypertarget{pricefetcher_8h_source}{}\doxysection{pricefetcher.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by Hamid Zargar on 2021-\/10-\/31.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef pricefetcher\_h}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define pricefetcher\_h}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}string"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}map"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_price_fetcher}{PriceFetcher}}\{}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{comment}{//constructor}}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_price_fetcher_a96d3f529cdf5854ea2e73ce57f427cb0}{PriceFetcher}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{comment}{//destructor}}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_price_fetcher_a62e4a157a1c13f459542a7944b8d9bb7}{\string~PriceFetcher}}();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_price_fetcher_ad23c9c28c5ef22702b5433f1db72c005}{downloadHistoricalCSV}}(std::string ticker, std::string start\_date, std::string end\_date, std::string interval, std::string file\_name);}
+\DoxyCodeLine{26     std::map<std::string, std::map<std::string, double>> \mbox{\hyperlink{class_price_fetcher_aaddfb3282f9d466c793e0d8cc0f2dd02}{fetch}}(std::string ticker, std::string start\_date, std::string end\_date, std::string interval);}
+\DoxyCodeLine{27     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_price_fetcher_ac4e1583bacf867684ea46b320cf3072d}{fetch\_last\_price}}(std::string ticker, \textcolor{keywordtype}{int} minus\_days);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     tm \mbox{\hyperlink{class_price_fetcher_a9f8775fde4641aed8a9504fede50b2e5}{DatePlusDays}}(tm date, \textcolor{keywordtype}{int} days);}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//pricefetcher\_h}}
+
+\end{DoxyCode}

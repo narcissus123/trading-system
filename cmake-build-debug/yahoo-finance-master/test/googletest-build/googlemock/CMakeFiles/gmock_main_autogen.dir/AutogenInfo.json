@@ -1,0 +1,84 @@
+{
+	"BUILD_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/gmock_main_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock",
+	"CMAKE_EXECUTABLE" : "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/CMakeLists.txt",
+		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindThreads.cmake",
+		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CheckLibraryExists.cmake",
+		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CheckIncludeFile.cmake",
+		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CheckCSourceCompiles.cmake",
+		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake",
+		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/FindPackageMessage.cmake",
+		"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/cmake/gmock.pc.in",
+		"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/cmake/gmock_main.pc.in"
+	],
+	"CMAKE_SOURCE_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/gmock_main_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/gmock_main_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock",
+		"/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src",
+		"/usr/local/include",
+		"/usr/local/lib",
+		"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock",
+		"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/include",
+		"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include",
+		"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest",
+		"/Library/Developer/CommandLineTools/usr/include/c++/v1",
+		"/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include",
+		"/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include",
+		"/Library/Developer/CommandLineTools/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/Library/Developer/CommandLineTools/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/gmock_main_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/local/share/qt/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/local/share/qt/libexec/uic",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 2,
+	"SETTINGS_FILE" : "/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/CMakeFiles/gmock_main_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/src/gmock_main.cc",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

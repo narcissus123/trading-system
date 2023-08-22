@@ -1,0 +1,158 @@
+\hypertarget{mainwindow_8h_source}{}\doxysection{mainwindow.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef MAINWINDOW\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define MAINWINDOW\_H}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}tradingstrategy.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}momentum\_trading\_strategy.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}regression\_trading\_strategy.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}trade.h"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}broker.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <QLineEdit>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <QTableWidget>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <QTableWidgetItem>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <QTimer>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <QMessageBox>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <QComboBox>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include "{}authentication.h"{}}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include "{}portfolio.h"{}}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include "{}QtCharts/QChart"{}}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include <QtCharts/QLineSeries>}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include <QtCharts/QLegend>}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include <QList>}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include <QChartView>}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include <QtCharts/QValueAxis>}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{class }\mbox{\hyperlink{class_main_window}{MainWindow}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35     Q\_OBJECT}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{private}:}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \mbox{\hyperlink{class_broker}{Broker}}* broker = \mbox{\hyperlink{class_broker_abb04fbf2f95735d0e365619e6f090398}{Broker::GetInstance}}();}
+\DoxyCodeLine{40     \mbox{\hyperlink{class_portfolio}{Portfolio}} portfolio;}
+\DoxyCodeLine{41     \mbox{\hyperlink{class_price_fetcher}{PriceFetcher}} priceFetcher;}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \mbox{\hyperlink{class_main_window}{MainWindow}} *ui;}
+\DoxyCodeLine{44     std::vector<QString> openingOrdersList;}
+\DoxyCodeLine{45     std::vector<std::pair<Trade, std::string>> tradeHistory;}
+\DoxyCodeLine{46     std::vector<Trade> openPositions;}
+\DoxyCodeLine{47     std::vector<std::tuple<Trade,float, float>> closedPositions;}
+\DoxyCodeLine{48     \textcolor{keywordtype}{int} numberOfTrades;}
+\DoxyCodeLine{49     QTableWidget *tradeHistoryTable;}
+\DoxyCodeLine{50     QTableWidget *openPositionsTable;}
+\DoxyCodeLine{51     QTableWidget *closedPositionsTable;}
+\DoxyCodeLine{52     std::string ticker;}
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} num\_shares;}
+\DoxyCodeLine{54     \textcolor{keywordtype}{int} action;}
+\DoxyCodeLine{55     \textcolor{keywordtype}{double} price;}
+\DoxyCodeLine{56     \textcolor{keywordtype}{float} pnl;}
+\DoxyCodeLine{57     \textcolor{keywordtype}{float} ret;}
+\DoxyCodeLine{58     std::string datetime;}
+\DoxyCodeLine{59     std::string order\_type;}
+\DoxyCodeLine{60     QTableWidgetItem *newItem;}
+\DoxyCodeLine{61     \textcolor{keywordtype}{bool} strategy1On = \textcolor{keyword}{false};         \textcolor{comment}{//check if trading strategy 1 is on/off}}
+\DoxyCodeLine{62     \textcolor{keywordtype}{bool} strategy2On = \textcolor{keyword}{false};         \textcolor{comment}{//check if trading strategy 2 is on/off}}
+\DoxyCodeLine{63     \textcolor{keywordtype}{bool} strategy3On = \textcolor{keyword}{false};         \textcolor{comment}{//check if trading strategy 3 is on/off}}
+\DoxyCodeLine{64     QPushButton *strategy1Butt;}
+\DoxyCodeLine{65     QPushButton *strategy2Butt;}
+\DoxyCodeLine{66     QPushButton *strategy3Butt;}
+\DoxyCodeLine{67     QLineEdit *startdateField;}
+\DoxyCodeLine{68     QLineEdit *enddateField;}
+\DoxyCodeLine{69     QLineEdit *tickerField;}
+\DoxyCodeLine{70     QPushButton *logInButt;}
+\DoxyCodeLine{71     \textcolor{keywordtype}{bool} loggedIn = \textcolor{keyword}{false};}
+\DoxyCodeLine{72     \mbox{\hyperlink{class_authentication}{Authentication}} auth;}
+\DoxyCodeLine{73     QString user;}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     QLabel *Portfolio1Label;}
+\DoxyCodeLine{76     QLabel *Strategy1Label;}
+\DoxyCodeLine{77     QLabel *Strategy2Label;}
+\DoxyCodeLine{78     QLabel *Strategy3Label;}
+\DoxyCodeLine{79     QLabel *statisticsLabel;}
+\DoxyCodeLine{80     QLabel *sortinoLabel;}
+\DoxyCodeLine{81     QLineEdit *sortinoRatio;}
+\DoxyCodeLine{82     QLabel *sharpeRatioLabel;}
+\DoxyCodeLine{83     QLineEdit *sharpeRatio;}
+\DoxyCodeLine{84     QLabel *DrawdownLabel;}
+\DoxyCodeLine{85     QLineEdit *maxDrawdown;}
+\DoxyCodeLine{86     QLabel *tradeLabel;}
+\DoxyCodeLine{87     QLabel *closedLabel;}
+\DoxyCodeLine{88     QLabel *openPositionLabel;}
+\DoxyCodeLine{89     QLabel *exportLabel;}
+\DoxyCodeLine{90     QLabel *startdateLabel;}
+\DoxyCodeLine{91     QLabel *enddateLabel;}
+\DoxyCodeLine{92     QLabel *tickerLabel;}
+\DoxyCodeLine{93     QPushButton* exportSubmitButton;}
+\DoxyCodeLine{94     QPushButton* exportAsCSV1;}
+\DoxyCodeLine{95     QPushButton* exportAsCSV2;}
+\DoxyCodeLine{96     QFrame *line;}
+\DoxyCodeLine{97     QFrame *line1;}
+\DoxyCodeLine{98     QLineEdit *Brand;}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100     \mbox{\hyperlink{class_momentum_trading_strategy}{MomentumTradingStrategy}}* strategy1;}
+\DoxyCodeLine{101     \mbox{\hyperlink{class_regression_trading_strategy}{RegressionTradingStrategy}}* strategy2;}
+\DoxyCodeLine{102     \mbox{\hyperlink{class_momentum_trading_strategy}{MomentumTradingStrategy}}* strategy3;}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     QHeaderView* header;}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106     QChart* chart;}
+\DoxyCodeLine{107     QLineSeries *totalEquity;}
+\DoxyCodeLine{108     QLineSeries *cashBalance;}
+\DoxyCodeLine{109     QLineSeries *stockPosition;}
+\DoxyCodeLine{110     QChartView *chartView;}
+\DoxyCodeLine{111     QVBoxLayout* layout;}
+\DoxyCodeLine{112     QValueAxis *axisX;}
+\DoxyCodeLine{113     QValueAxis *axisY;}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115     \textcolor{keywordtype}{int} old\_x = 0;}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{keyword}{public}:}
+\DoxyCodeLine{119     \mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{120     \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 signals:}
+\DoxyCodeLine{123     \textcolor{keywordtype}{void} newTradeAdded();}
+\DoxyCodeLine{124     \textcolor{keywordtype}{void} newPositionOpened();}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_ab9e58b90e2f834ca7f2871b0a34ba81e}{loginPrompt}}();}
+\DoxyCodeLine{129     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a047b3fc443e7c0e480a4f64a23e634e3}{exportData}}();}
+\DoxyCodeLine{130     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_abfa9c3355786869390ed15ee568c1782}{updateHistoryTable}}();}
+\DoxyCodeLine{131     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_aac348bde0a8fc3c5dedc25b442f8cb7e}{updateOpenPositionTable}}();}
+\DoxyCodeLine{132     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a450e970aa6c65e39fca9dbac8d5a6b4c}{updateClosedPositionsTable}}();}
+\DoxyCodeLine{133     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_ac12e7530f66624bccdf18518b9d8ae34}{analyzeAllStrategies}}();}
+\DoxyCodeLine{134     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_af9258c03a301bb07d66fa02d28e15706}{updateStatistics}}();}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a7e510eec43127946de350b8b868b5589}{turnOnstrategy1}}();}
+\DoxyCodeLine{137     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_aee5ca8b3dfcf1e75830fcd55c6241b25}{turnOnStrategy2}}();}
+\DoxyCodeLine{138     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a50a16f2a35f884aab216b2d886bc7b6d}{turnOnStrategy3}}();}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a9f81b591f9e968128b6dc7c49fe4231a}{createStrategyLabels}}();}
+\DoxyCodeLine{141     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a8cccfd42ed1779c6e091873420aa4f79}{createStatisticsLabels}}();}
+\DoxyCodeLine{142     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_aa292e7eb653e8bb008d88cb8c2f30b6e}{createHistoricalTradesTable}}();}
+\DoxyCodeLine{143     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_adec28d86b38a4e47c4d84972c4e05fcb}{createOpenPositionsTable}}();}
+\DoxyCodeLine{144     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_ab1ef1f4230df2ec3f61360349d993cc7}{createExportDataFeature}}();}
+\DoxyCodeLine{145     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_af20e7a7e49647a4825b465cf1afbd831}{createMainWindowLabels}}();}
+\DoxyCodeLine{146     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_ae83a20f31519c3dac5e50c37907ee156}{createClosedPositionsTable}}();}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_aebdeb30a44737893c58cbd2a082898ff}{addStrategiesToPortfolioAndStart}}();}
+\DoxyCodeLine{149     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a47d461aa6462dcd8e02df64eef2dc618}{exportTradeHistory}}();}
+\DoxyCodeLine{150     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a8f43fc8e06f4b3c43e48d6505116564a}{createExportTradeHistoryFeature}}();}
+\DoxyCodeLine{151     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a5cec2e976836504a81c953c0b9ac61c2}{createExportClosedPositionsFeature}}();}
+\DoxyCodeLine{152     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a76f7e2aac24cfd69ee82f6320d49b2d7}{exportClosedPositions}}();}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a5bf72c652108554493460d02a8a99d5b}{createChart}}();}
+\DoxyCodeLine{155     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_ac19c990c646bfea56be4f0665c46ac7f}{updateChart}}();}
+\DoxyCodeLine{156 \};}
+\DoxyCodeLine{157 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// MAINWINDOW\_H}}
+
+\end{DoxyCode}

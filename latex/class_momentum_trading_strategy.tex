@@ -1,0 +1,128 @@
+\hypertarget{class_momentum_trading_strategy}{}\doxysection{Momentum\+Trading\+Strategy Class Reference}
+\label{class_momentum_trading_strategy}\index{MomentumTradingStrategy@{MomentumTradingStrategy}}
+
+
+This class creates a momentum trading strategy that executes trades in the direction of their previous days movement.  
+
+
+
+
+{\ttfamily \#include $<$momentum\+\_\+trading\+\_\+strategy.\+h$>$}
+
+Inheritance diagram for Momentum\+Trading\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_momentum_trading_strategy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_momentum_trading_strategy_a226e6f5dac5cd639a932a5f621a81323}{Momentum\+Trading\+Strategy}} (const std\+::string \&ticker, int strategy\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Constructor for momentum trading strategy class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_momentum_trading_strategy_a446aa11c12724afa6edc6acd3c90ede8}{analyze}} ()
+\begin{DoxyCompactList}\small\item\em Executes the trade using our \mbox{\hyperlink{class_broker}{Broker}} object pointer if the price conditions are met. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_momentum_trading_strategy_a01f0277ad6c014403a5746d4d5b8d031}{$\sim$\+Momentum\+Trading\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to deallocate memory. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_momentum_trading_strategy_a24416a8ed970e7405c63eaf291aa09de}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em The strategy name for this type of strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_momentum_trading_strategy_a6509bb781d676d3065bca606f35d735d}\label{class_momentum_trading_strategy_a6509bb781d676d3065bca606f35d735d}} 
+std\+::string {\bfseries ticker}
+\item 
+\mbox{\Hypertarget{class_momentum_trading_strategy_a43f36e4dcd81c0be737c76f101fa516d}\label{class_momentum_trading_strategy_a43f36e4dcd81c0be737c76f101fa516d}} 
+int {\bfseries strategy\+\_\+id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class creates a momentum trading strategy that executes trades in the direction of their previous days movement. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_momentum_trading_strategy_a226e6f5dac5cd639a932a5f621a81323}\label{class_momentum_trading_strategy_a226e6f5dac5cd639a932a5f621a81323}} 
+\index{MomentumTradingStrategy@{MomentumTradingStrategy}!MomentumTradingStrategy@{MomentumTradingStrategy}}
+\index{MomentumTradingStrategy@{MomentumTradingStrategy}!MomentumTradingStrategy@{MomentumTradingStrategy}}
+\doxysubsubsection{\texorpdfstring{MomentumTradingStrategy()}{MomentumTradingStrategy()}}
+{\footnotesize\ttfamily Momentum\+Trading\+Strategy\+::\+Momentum\+Trading\+Strategy (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ticker,  }\item[{int}]{strategy\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Constructor for momentum trading strategy class. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ticker} & Represents the stock ticker we want to employ the strategy on. \\
+\hline
+{\em strategy\+\_\+id} & Represents the id we will assign to the strategy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_momentum_trading_strategy_a01f0277ad6c014403a5746d4d5b8d031}\label{class_momentum_trading_strategy_a01f0277ad6c014403a5746d4d5b8d031}} 
+\index{MomentumTradingStrategy@{MomentumTradingStrategy}!````~MomentumTradingStrategy@{$\sim$MomentumTradingStrategy}}
+\index{````~MomentumTradingStrategy@{$\sim$MomentumTradingStrategy}!MomentumTradingStrategy@{MomentumTradingStrategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$MomentumTradingStrategy()}{~MomentumTradingStrategy()}}
+{\footnotesize\ttfamily Momentum\+Trading\+Strategy\+::$\sim$\+Momentum\+Trading\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destructor to deallocate memory. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_momentum_trading_strategy_a446aa11c12724afa6edc6acd3c90ede8}\label{class_momentum_trading_strategy_a446aa11c12724afa6edc6acd3c90ede8}} 
+\index{MomentumTradingStrategy@{MomentumTradingStrategy}!analyze@{analyze}}
+\index{analyze@{analyze}!MomentumTradingStrategy@{MomentumTradingStrategy}}
+\doxysubsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily void Momentum\+Trading\+Strategy\+::analyze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the trade using our \mbox{\hyperlink{class_broker}{Broker}} object pointer if the price conditions are met. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+Implements \mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}}.
+
+\mbox{\Hypertarget{class_momentum_trading_strategy_a24416a8ed970e7405c63eaf291aa09de}\label{class_momentum_trading_strategy_a24416a8ed970e7405c63eaf291aa09de}} 
+\index{MomentumTradingStrategy@{MomentumTradingStrategy}!getName@{getName}}
+\index{getName@{getName}!MomentumTradingStrategy@{MomentumTradingStrategy}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Momentum\+Trading\+Strategy\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The strategy name for this type of strategy. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The strategy name \char`\"{}\+Momentum Strategy\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+momentum\+\_\+trading\+\_\+strategy.\+h\item 
+momentum\+\_\+trading\+\_\+strategy.\+cpp\end{DoxyCompactItemize}

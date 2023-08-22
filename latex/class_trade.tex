@@ -1,0 +1,251 @@
+\hypertarget{class_trade}{}\doxysection{Trade Class Reference}
+\label{class_trade}\index{Trade@{Trade}}
+
+
+This calss deals with creation of our trades that will be created by our strategies and executed by our \mbox{\hyperlink{class_broker}{Broker}}.  
+
+
+
+
+{\ttfamily \#include $<$trade.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trade_a966367389a1c0912a0796a0146961ca8}{Trade}} (std\+::string ticker, int num\+\_\+shares, int action, float price, int strategy\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Constructor for our \mbox{\hyperlink{class_trade}{Trade}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_trade_a27c6459c16762c607a4b4feec6299509}{$\sim$\+Trade}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to deallocate memory. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trade_a33e671198950ab225ab9aefdec6e9b43}{get\+Ticker}} () const
+\begin{DoxyCompactList}\small\item\em Gets the ticker of the trade. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_trade_a69226a977a71979e0444e94f91bded14}{get\+Num\+Shares}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of shares of the trade. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_trade_aab0836a698be450a72bebc442606bcd8}{get\+Action}} () const
+\begin{DoxyCompactList}\small\item\em Gets the action of the trade. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_trade_a2734fe5f93b1606a163644ce272b6543}{get\+Price}} () const
+\begin{DoxyCompactList}\small\item\em Gets the price of the trade. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trade_a69e6e865945a93cc6088a562f2f469bf}{get\+Order\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Gets the order type of the trade. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_trade_ae80fce7e90e6b1c254e14d0349034c3f}{get\+Strategy\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Gets the strategy id of the trade. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trade_af6ae0f108e88ba0bdd3cceb433ae58e7}{set\+Num\+Shares}} (int num\+\_\+shares)
+\begin{DoxyCompactList}\small\item\em Sets the number of shares of the trade. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trade_a7f40100a143f76601262f4e8bcaa0ebc}{set\+Price}} (float new\+\_\+price)
+\begin{DoxyCompactList}\small\item\em Sets the price of the trade. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trade_a0f37022ebb4d6ed1c49c9382440b901f}{set\+Action}} (int new\+\_\+action)
+\begin{DoxyCompactList}\small\item\em Sets the action of the trade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_trade_a170e62da53896dcb7b90f64b99806c7b}\label{class_trade_a170e62da53896dcb7b90f64b99806c7b}} 
+std\+::string {\bfseries ticker}
+\item 
+\mbox{\Hypertarget{class_trade_abdf07042b92db027948a4547c991e487}\label{class_trade_abdf07042b92db027948a4547c991e487}} 
+int {\bfseries num\+\_\+shares}
+\item 
+\mbox{\Hypertarget{class_trade_aa2b42cf5772cfdc14287bedee93473c5}\label{class_trade_aa2b42cf5772cfdc14287bedee93473c5}} 
+int {\bfseries action}
+\item 
+\mbox{\Hypertarget{class_trade_a1a6273a3b41e49d3b5ff78a3bdc15985}\label{class_trade_a1a6273a3b41e49d3b5ff78a3bdc15985}} 
+float {\bfseries price} \{\}
+\item 
+\mbox{\Hypertarget{class_trade_a27cf038a62ba593b44c937756bc771b1}\label{class_trade_a27cf038a62ba593b44c937756bc771b1}} 
+std\+::string {\bfseries order\+\_\+type}
+\item 
+\mbox{\Hypertarget{class_trade_a21428769422847a305bfbbaebcbb403c}\label{class_trade_a21428769422847a305bfbbaebcbb403c}} 
+int {\bfseries strategy\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This calss deals with creation of our trades that will be created by our strategies and executed by our \mbox{\hyperlink{class_broker}{Broker}}. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_trade_a966367389a1c0912a0796a0146961ca8}\label{class_trade_a966367389a1c0912a0796a0146961ca8}} 
+\index{Trade@{Trade}!Trade@{Trade}}
+\index{Trade@{Trade}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{Trade()}{Trade()}}
+{\footnotesize\ttfamily Trade\+::\+Trade (\begin{DoxyParamCaption}\item[{std\+::string}]{ticker,  }\item[{int}]{num\+\_\+shares,  }\item[{int}]{action,  }\item[{float}]{price,  }\item[{int}]{strategy\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Constructor for our \mbox{\hyperlink{class_trade}{Trade}} object. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ticker} & Represents the stock ticker we want to employ the strategy on. \\
+\hline
+{\em num\+\_\+shares} & Represents the number of shares we want to execute in our trade. \\
+\hline
+{\em action} & 1 to buy, -\/1 to sell \\
+\hline
+{\em price} & Represents the the price we want to execute at. \\
+\hline
+{\em strategy\+\_\+id} & Represents the id of the strategy that is executing this trade. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_trade_a27c6459c16762c607a4b4feec6299509}\label{class_trade_a27c6459c16762c607a4b4feec6299509}} 
+\index{Trade@{Trade}!````~Trade@{$\sim$Trade}}
+\index{````~Trade@{$\sim$Trade}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{$\sim$Trade()}{~Trade()}}
+{\footnotesize\ttfamily Trade\+::$\sim$\+Trade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destructor to deallocate memory. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_trade_aab0836a698be450a72bebc442606bcd8}\label{class_trade_aab0836a698be450a72bebc442606bcd8}} 
+\index{Trade@{Trade}!getAction@{getAction}}
+\index{getAction@{getAction}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{getAction()}{getAction()}}
+{\footnotesize\ttfamily int Trade\+::get\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the action of the trade. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The action of the trade 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trade_a69226a977a71979e0444e94f91bded14}\label{class_trade_a69226a977a71979e0444e94f91bded14}} 
+\index{Trade@{Trade}!getNumShares@{getNumShares}}
+\index{getNumShares@{getNumShares}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{getNumShares()}{getNumShares()}}
+{\footnotesize\ttfamily int Trade\+::get\+Num\+Shares (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of shares of the trade. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The number of shares of the trade 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trade_a69e6e865945a93cc6088a562f2f469bf}\label{class_trade_a69e6e865945a93cc6088a562f2f469bf}} 
+\index{Trade@{Trade}!getOrderType@{getOrderType}}
+\index{getOrderType@{getOrderType}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{getOrderType()}{getOrderType()}}
+{\footnotesize\ttfamily std\+::string Trade\+::get\+Order\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the order type of the trade. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The order type of the trade 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trade_a2734fe5f93b1606a163644ce272b6543}\label{class_trade_a2734fe5f93b1606a163644ce272b6543}} 
+\index{Trade@{Trade}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily float Trade\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the price of the trade. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The price of the trade 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trade_ae80fce7e90e6b1c254e14d0349034c3f}\label{class_trade_ae80fce7e90e6b1c254e14d0349034c3f}} 
+\index{Trade@{Trade}!getStrategyID@{getStrategyID}}
+\index{getStrategyID@{getStrategyID}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{getStrategyID()}{getStrategyID()}}
+{\footnotesize\ttfamily int Trade\+::get\+Strategy\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the strategy id of the trade. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The strategy id of the trade 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trade_a33e671198950ab225ab9aefdec6e9b43}\label{class_trade_a33e671198950ab225ab9aefdec6e9b43}} 
+\index{Trade@{Trade}!getTicker@{getTicker}}
+\index{getTicker@{getTicker}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{getTicker()}{getTicker()}}
+{\footnotesize\ttfamily std\+::string Trade\+::get\+Ticker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the ticker of the trade. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The ticker of the trade 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trade_a0f37022ebb4d6ed1c49c9382440b901f}\label{class_trade_a0f37022ebb4d6ed1c49c9382440b901f}} 
+\index{Trade@{Trade}!setAction@{setAction}}
+\index{setAction@{setAction}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{setAction()}{setAction()}}
+{\footnotesize\ttfamily void Trade\+::set\+Action (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+action }\end{DoxyParamCaption})}
+
+
+
+Sets the action of the trade. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_trade_af6ae0f108e88ba0bdd3cceb433ae58e7}\label{class_trade_af6ae0f108e88ba0bdd3cceb433ae58e7}} 
+\index{Trade@{Trade}!setNumShares@{setNumShares}}
+\index{setNumShares@{setNumShares}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{setNumShares()}{setNumShares()}}
+{\footnotesize\ttfamily void Trade\+::set\+Num\+Shares (\begin{DoxyParamCaption}\item[{int}]{shares }\end{DoxyParamCaption})}
+
+
+
+Sets the number of shares of the trade. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_trade_a7f40100a143f76601262f4e8bcaa0ebc}\label{class_trade_a7f40100a143f76601262f4e8bcaa0ebc}} 
+\index{Trade@{Trade}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily void Trade\+::set\+Price (\begin{DoxyParamCaption}\item[{float}]{new\+\_\+price }\end{DoxyParamCaption})}
+
+
+
+Sets the price of the trade. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+trade.\+h\item 
+trade.\+cpp\end{DoxyCompactItemize}

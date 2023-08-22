@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tradingsystem"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\yahoo-finance-master\;CMake Files\cmake-build-debug\yahoo-finance-master\test\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\cmake\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\;CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\;CMake Files\yahoo-finance-master\;CMake Files\yahoo-finance-master\doc\;CMake Files\yahoo-finance-master\test\;CMake Files\yahoo-finance-master\test\gtest\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tradingsystem">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/tradingsystem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 tradingsystem"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tradingsystem/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/tradingsystem" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 tradingsystem/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 example"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 example/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yahoo-finance">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/libyahoo-finance.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 yahoo-finance"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yahoo-finance/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/libyahoo-finance.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 yahoo-finance/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="time_utils_test">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/time_utils_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/src"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 time_utils_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="time_utils_test/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/time_utils_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/src"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 time_utils_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="quote_test">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/quote_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/src"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 quote_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="quote_test/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/quote_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/src"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 quote_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/lib/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/lib/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/lib/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/lib/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/broker.cpp">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/broker.h">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/main.cpp">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/momentum_trading_strategy.cpp">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/momentum_trading_strategy.h">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/portfolio.cpp">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/portfolio.h">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/pricefetcher.cpp">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/pricefetcher.h">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/riskmanager.cpp">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/riskmanager.h">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/trade.cpp">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/trade.h">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/tradingstrategy.cpp">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/tradingstrategy.h">
+			<Option target="tradingsystem"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/curl_utils.cpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/curl_utils.hpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/example.cpp">
+			<Option target="example"/>
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/quote.cpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/quote.hpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/spot.cpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/spot.hpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/time_utils.cpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/time_utils.hpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/test/quote_test.cpp">
+			<Option target="quote_test"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/test/time_utils_test.cpp">
+			<Option target="time_utils_test"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/test/googletest-src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\yahoo-finance-master\test\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\doc\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\test\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/test/gtest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\test\gtest\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

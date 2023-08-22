@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libtws_cpp_api.a CMakeFiles/tws_cpp_api.dir/__/Src/TwsApiL0.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libtws_cpp_api.a

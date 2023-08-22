@@ -1,0 +1,3 @@
+repository='https://github.com/foxadb/yahoo-finance'
+module=''
+tag='origin'

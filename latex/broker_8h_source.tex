@@ -1,0 +1,88 @@
+\hypertarget{broker_8h_source}{}\doxysection{broker.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef broker\_h}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define broker\_h}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}string"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}map"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}trade.h"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_broker}{Broker}} \{}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \mbox{\hyperlink{class_broker}{Broker}}()\{\};}
+\DoxyCodeLine{22     \textcolor{keyword}{static} \mbox{\hyperlink{class_broker}{Broker}}* \mbox{\hyperlink{class_broker_a894a136e608eebc909b1c697b84c4f59}{broker}};}
+\DoxyCodeLine{23     \textcolor{keywordtype}{bool} connection\_status = \textcolor{keyword}{true};}
+\DoxyCodeLine{24     std::vector<std::pair<Trade, std::string>> trade\_history; \textcolor{comment}{// string is the datetime trade occurred}}
+\DoxyCodeLine{25     std::vector<Trade> open\_positions;}
+\DoxyCodeLine{26     std::vector<std::tuple<Trade,float, float>> closed\_positions; \textcolor{comment}{//first float is pnl, second return in percentage}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{comment}{// Update these as trades executed}}
+\DoxyCodeLine{29     \textcolor{keywordtype}{float} sortino\_ratio = 0;}
+\DoxyCodeLine{30     \textcolor{keywordtype}{float} sharpe\_ratio = 0;}
+\DoxyCodeLine{31     \textcolor{keywordtype}{float} max\_drawdown = 0;}
+\DoxyCodeLine{32     \textcolor{keywordtype}{float} current\_return = 0;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{comment}{// Don't change}}
+\DoxyCodeLine{35     \textcolor{keywordtype}{float} risk\_free\_rate = 0.06; \textcolor{comment}{// This is th risk-\/free rate of return used in our calculations}}
+\DoxyCodeLine{36     \textcolor{keywordtype}{float} max\_drawdown\_threshold = -\/0.1;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_broker_a389dd07700c57a65d930c3fdf0c5e10e}{addToTradeHistory}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_trade}{Trade}}\& trade);}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_broker_af766f9009caae69b412a73d5c1544fe9}{addToOpenPositions}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_trade}{Trade}}\& trade);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_broker_ac95f609ecedecdd7f5d9effa83185ad5}{addToClosedPositions}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_trade}{Trade}}\& trade, \textcolor{keywordtype}{float} pnl, \textcolor{keywordtype}{float} ret);}
+\DoxyCodeLine{41     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_broker_a07899e47141dab782e7be1554a719ba1}{buyToClose}}(std::vector<Trade>::iterator it, \textcolor{keyword}{const} \mbox{\hyperlink{class_trade}{Trade}}\& trade);}
+\DoxyCodeLine{42     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_broker_a47c62c2ea0c925b2e7ed386383746529}{sellToClose}}(std::vector<Trade>::iterator it, \textcolor{keyword}{const} \mbox{\hyperlink{class_trade}{Trade}}\& trade);}
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_broker_acf64e879bf2d92fbeb0c6a4dfa13d1ef}{buyToOpen}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_trade}{Trade}}\& trade, \textcolor{keywordtype}{bool} add\_to\_open\_positions);}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_broker_a0e485d13c72721ee265cf54f72a04293}{sellToOpen}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_trade}{Trade}}\& trade, \textcolor{keywordtype}{bool} add\_to\_open\_positions);}
+\DoxyCodeLine{45     \textcolor{keyword}{static} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_afabcba58e78d1ed2a0735edd4f6f7185}{calculateStandardDeviation}}(\textcolor{keyword}{const} std::vector<float>\& data);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{comment}{// Updates stats}}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_broker_a89971183a94767e9fa815ca410b731d1}{calculateSortinoRatio}}();}
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_broker_a2fe60ee88a0d757b2e97e80911f2e2e6}{calculateSharpeRatio}}();}
+\DoxyCodeLine{50     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_broker_ae49e42075619130f076bfd128fb2fb62}{calculateMaxDrawdown}}();}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_broker_a1017cc3f19ad36f560a29e9d94c5fa84}{calculateCurrentReturn}}();}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{comment}{//   Our initial balance, this is not updated actively but rather used for calculation of overall returns}}
+\DoxyCodeLine{54     \textcolor{keywordtype}{float} initial\_balance = 100000;}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{comment}{// These values are the ones that are updated}}
+\DoxyCodeLine{57     \textcolor{keywordtype}{float} total\_equity = 100000;}
+\DoxyCodeLine{58     \textcolor{keywordtype}{float} lowest\_reached\_equity = 100000;}
+\DoxyCodeLine{59     \textcolor{keywordtype}{float} stock\_position = 0;}
+\DoxyCodeLine{60     \textcolor{keywordtype}{float} cash\_balance = 100000;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{keyword}{public}:}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{68     \mbox{\hyperlink{class_broker_ac337a10cce82215ef72086129da1de77}{Broker}}(\mbox{\hyperlink{class_broker}{Broker}} \&other) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_broker_ad1925f386e1bf373e42f2c6a03bb1644}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_broker}{Broker}} \&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{83     \textcolor{keyword}{static} \mbox{\hyperlink{class_broker}{Broker}} *\mbox{\hyperlink{class_broker_abb04fbf2f95735d0e365619e6f090398}{GetInstance}}();}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{90     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_broker_ac047669357989dfee857c7d3850a5f8a}{getConnectionStatus}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \mbox{\hyperlink{class_broker_a2f2c3977cc9595469022f23e4fc793f5}{\string~Broker}}(); \textcolor{comment}{//deConstructor when we point to the object}}
+\DoxyCodeLine{93     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_broker_a89105a1678e95de8013f9df149cdca7e}{execute}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_trade}{Trade}}\& trade);}
+\DoxyCodeLine{94     std::vector<Trade> \mbox{\hyperlink{class_broker_ad7f6ef83422ddfd674fc5178e766166c}{getOpenPositions}}();}
+\DoxyCodeLine{95     std::vector<std::pair<Trade, std::string>> \mbox{\hyperlink{class_broker_a333395303e1eccde84cd706eeb158275}{getTradeHistory}}();}
+\DoxyCodeLine{96     std::vector<std::tuple<Trade, float, float>> \mbox{\hyperlink{class_broker_ae479bc89b5512145cc0b3daa15925eb0}{getClosedPositions}}();}
+\DoxyCodeLine{97     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_a3fbfc246105524743569c708d349aab1}{getTotalEquity}}();}
+\DoxyCodeLine{98     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_a18c720dc4f1606981f1a366098a8a7f5}{getStockPosition}}();}
+\DoxyCodeLine{99     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_a8623d26e9c24fa5ea2fadbf99e395513}{getCashBalance}}();}
+\DoxyCodeLine{100     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_aee9c13ffe3cdc89b99ff10b775c4d5fe}{getInitialBalance}}();}
+\DoxyCodeLine{101     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_a6a4ee045e68702c4ea71709f214425cd}{getSortinoRatio}}();}
+\DoxyCodeLine{102     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_a1c09b531ebef96616b4636528543b17f}{getSharpeRatio}}();}
+\DoxyCodeLine{103     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_a269e4c4cc95fef4ef81e2809a319d4dc}{getMaxDrawdown}}();}
+\DoxyCodeLine{104     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_a41da0f8e74d84b81685bb06874347e89}{getCurrentReturn}}();}
+\DoxyCodeLine{105     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_broker_a8481691a2a59b6d28fe21f9312fb958d}{getMaxDrawdownThreshold}}();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107 \};}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//broker\_h}}
+
+\end{DoxyCode}

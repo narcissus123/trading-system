@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['calculatecurrentreturn_0',['calculateCurrentReturn',['../class_broker.html#a1017cc3f19ad36f560a29e9d94c5fa84',1,'Broker']]],
+  ['calculatemaxdrawdown_1',['calculateMaxDrawdown',['../class_broker.html#ae49e42075619130f076bfd128fb2fb62',1,'Broker']]],
+  ['calculatesharperatio_2',['calculateSharpeRatio',['../class_broker.html#a2fe60ee88a0d757b2e97e80911f2e2e6',1,'Broker']]],
+  ['calculatesortinoratio_3',['calculateSortinoRatio',['../class_broker.html#a89971183a94767e9fa815ca410b731d1',1,'Broker']]],
+  ['calculatestandarddeviation_4',['calculateStandardDeviation',['../class_broker.html#afabcba58e78d1ed2a0735edd4f6f7185',1,'Broker']]],
+  ['closeallopenpositions_5',['closeAllOpenPositions',['../class_risk_manager.html#af2f94047927d6036bedb497a3f602539',1,'RiskManager']]],
+  ['createchart_6',['createChart',['../class_main_window.html#a5bf72c652108554493460d02a8a99d5b',1,'MainWindow']]],
+  ['createclosedpositionstable_7',['createClosedPositionsTable',['../class_main_window.html#ae83a20f31519c3dac5e50c37907ee156',1,'MainWindow']]],
+  ['createexportclosedpositionsfeature_8',['createExportClosedPositionsFeature',['../class_main_window.html#a5cec2e976836504a81c953c0b9ac61c2',1,'MainWindow']]],
+  ['createexportdatafeature_9',['createExportDataFeature',['../class_main_window.html#ab1ef1f4230df2ec3f61360349d993cc7',1,'MainWindow']]],
+  ['createexporttradehistoryfeature_10',['createExportTradeHistoryFeature',['../class_main_window.html#a8f43fc8e06f4b3c43e48d6505116564a',1,'MainWindow']]],
+  ['createhistoricaltradestable_11',['createHistoricalTradesTable',['../class_main_window.html#aa292e7eb653e8bb008d88cb8c2f30b6e',1,'MainWindow']]],
+  ['createmainwindowlabels_12',['createMainWindowLabels',['../class_main_window.html#af20e7a7e49647a4825b465cf1afbd831',1,'MainWindow']]],
+  ['createopenpositionstable_13',['createOpenPositionsTable',['../class_main_window.html#adec28d86b38a4e47c4d84972c4e05fcb',1,'MainWindow']]],
+  ['createstatisticslabels_14',['createStatisticsLabels',['../class_main_window.html#a8cccfd42ed1779c6e091873420aa4f79',1,'MainWindow']]],
+  ['createstrategylabels_15',['createStrategyLabels',['../class_main_window.html#a9f81b591f9e968128b6dc7c49fe4231a',1,'MainWindow']]],
+  ['createtrade_16',['createTrade',['../class_trading_strategy.html#a631f959188d7609e68b81a9cf1cba311',1,'TradingStrategy']]]
+];

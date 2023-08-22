@@ -1,0 +1,174 @@
+\hypertarget{class_price_fetcher}{}\doxysection{Price\+Fetcher Class Reference}
+\label{class_price_fetcher}\index{PriceFetcher@{PriceFetcher}}
+
+
+This class is the API to Yahoo Finance that will retrieve the stock price data for which our strategies will execute their trades on.  
+
+
+
+
+{\ttfamily \#include $<$pricefetcher.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_price_fetcher_a96d3f529cdf5854ea2e73ce57f427cb0}{Price\+Fetcher}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for our price api. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_price_fetcher_a62e4a157a1c13f459542a7944b8d9bb7}{$\sim$\+Price\+Fetcher}} ()
+\begin{DoxyCompactList}\small\item\em Destrcutor to deallocate memory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_price_fetcher_ad23c9c28c5ef22702b5433f1db72c005}{download\+Historical\+CSV}} (std\+::string ticker, std\+::string start\+\_\+date, std\+::string end\+\_\+date, std\+::string interval, std\+::string file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Downlaods the price data as a historical CSV saved to disk. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, std\+::map$<$ std\+::string, double $>$ $>$ \mbox{\hyperlink{class_price_fetcher_aaddfb3282f9d466c793e0d8cc0f2dd02}{fetch}} (std\+::string ticker, std\+::string start\+\_\+date, std\+::string end\+\_\+date, std\+::string interval)
+\begin{DoxyCompactList}\small\item\em Gets the price data for a specific ticker between specifci dates. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_price_fetcher_ac4e1583bacf867684ea46b320cf3072d}{fetch\+\_\+last\+\_\+price}} (std\+::string ticker, int minus\+\_\+days)
+\begin{DoxyCompactList}\small\item\em Gets the last price data for a specific day from the current day. \end{DoxyCompactList}\item 
+tm \mbox{\hyperlink{class_price_fetcher_a9f8775fde4641aed8a9504fede50b2e5}{Date\+Plus\+Days}} (tm date, int days)
+\begin{DoxyCompactList}\small\item\em Creates a new date with the added days to the date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is the API to Yahoo Finance that will retrieve the stock price data for which our strategies will execute their trades on. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_price_fetcher_a96d3f529cdf5854ea2e73ce57f427cb0}\label{class_price_fetcher_a96d3f529cdf5854ea2e73ce57f427cb0}} 
+\index{PriceFetcher@{PriceFetcher}!PriceFetcher@{PriceFetcher}}
+\index{PriceFetcher@{PriceFetcher}!PriceFetcher@{PriceFetcher}}
+\doxysubsubsection{\texorpdfstring{PriceFetcher()}{PriceFetcher()}}
+{\footnotesize\ttfamily Price\+Fetcher\+::\+Price\+Fetcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Constructor for our price api. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_price_fetcher_a62e4a157a1c13f459542a7944b8d9bb7}\label{class_price_fetcher_a62e4a157a1c13f459542a7944b8d9bb7}} 
+\index{PriceFetcher@{PriceFetcher}!````~PriceFetcher@{$\sim$PriceFetcher}}
+\index{````~PriceFetcher@{$\sim$PriceFetcher}!PriceFetcher@{PriceFetcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$PriceFetcher()}{~PriceFetcher()}}
+{\footnotesize\ttfamily Price\+Fetcher\+::$\sim$\+Price\+Fetcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destrcutor to deallocate memory. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_price_fetcher_a9f8775fde4641aed8a9504fede50b2e5}\label{class_price_fetcher_a9f8775fde4641aed8a9504fede50b2e5}} 
+\index{PriceFetcher@{PriceFetcher}!DatePlusDays@{DatePlusDays}}
+\index{DatePlusDays@{DatePlusDays}!PriceFetcher@{PriceFetcher}}
+\doxysubsubsection{\texorpdfstring{DatePlusDays()}{DatePlusDays()}}
+{\footnotesize\ttfamily struct tm Price\+Fetcher\+::\+Date\+Plus\+Days (\begin{DoxyParamCaption}\item[{tm}]{date,  }\item[{int}]{days }\end{DoxyParamCaption})}
+
+
+
+Creates a new date with the added days to the date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The current date \\
+\hline
+{\em days} & The number of days to add to our current date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A struct tm representing the new date. 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_price_fetcher_ad23c9c28c5ef22702b5433f1db72c005}\label{class_price_fetcher_ad23c9c28c5ef22702b5433f1db72c005}} 
+\index{PriceFetcher@{PriceFetcher}!downloadHistoricalCSV@{downloadHistoricalCSV}}
+\index{downloadHistoricalCSV@{downloadHistoricalCSV}!PriceFetcher@{PriceFetcher}}
+\doxysubsubsection{\texorpdfstring{downloadHistoricalCSV()}{downloadHistoricalCSV()}}
+{\footnotesize\ttfamily int Price\+Fetcher\+::download\+Historical\+CSV (\begin{DoxyParamCaption}\item[{std\+::string}]{ticker,  }\item[{std\+::string}]{start\+\_\+date,  }\item[{std\+::string}]{end\+\_\+date,  }\item[{std\+::string}]{interval,  }\item[{std\+::string}]{file\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Downlaods the price data as a historical CSV saved to disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticker} & The stock ticker we want data for \\
+\hline
+{\em start\+\_\+date} & The start date of our data \\
+\hline
+{\em end\+\_\+date} & The end date of our data \\
+\hline
+{\em interval} & The granualrity of our data (1 week, 1 day, etc..) \\
+\hline
+{\em file\+\_\+name} & The name of the file we want to save to disk \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success, 1 for failure 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_price_fetcher_aaddfb3282f9d466c793e0d8cc0f2dd02}\label{class_price_fetcher_aaddfb3282f9d466c793e0d8cc0f2dd02}} 
+\index{PriceFetcher@{PriceFetcher}!fetch@{fetch}}
+\index{fetch@{fetch}!PriceFetcher@{PriceFetcher}}
+\doxysubsubsection{\texorpdfstring{fetch()}{fetch()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::map$<$ std\+::string, double $>$ $>$ Price\+Fetcher\+::fetch (\begin{DoxyParamCaption}\item[{std\+::string}]{ticker,  }\item[{std\+::string}]{start\+\_\+date,  }\item[{std\+::string}]{end\+\_\+date,  }\item[{std\+::string}]{interval }\end{DoxyParamCaption})}
+
+
+
+Gets the price data for a specific ticker between specifci dates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticker} & The stock ticker we want data for \\
+\hline
+{\em start\+\_\+date} & The start date of our data \\
+\hline
+{\em end\+\_\+date} & The end date of our data \\
+\hline
+{\em interval} & The granualrity of our data (1 week, 1 day, etc..) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 for success 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_price_fetcher_ac4e1583bacf867684ea46b320cf3072d}\label{class_price_fetcher_ac4e1583bacf867684ea46b320cf3072d}} 
+\index{PriceFetcher@{PriceFetcher}!fetch\_last\_price@{fetch\_last\_price}}
+\index{fetch\_last\_price@{fetch\_last\_price}!PriceFetcher@{PriceFetcher}}
+\doxysubsubsection{\texorpdfstring{fetch\_last\_price()}{fetch\_last\_price()}}
+{\footnotesize\ttfamily float Price\+Fetcher\+::fetch\+\_\+last\+\_\+price (\begin{DoxyParamCaption}\item[{std\+::string}]{ticker,  }\item[{int}]{minus\+\_\+days }\end{DoxyParamCaption})}
+
+
+
+Gets the last price data for a specific day from the current day. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticker} & The stock ticker we want data for \\
+\hline
+{\em minus\+\_\+days} & The number of days fro mthe current date backwards \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The last price of the stock 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pricefetcher.\+h\item 
+pricefetcher.\+cpp\end{DoxyCompactItemize}

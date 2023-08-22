@@ -1,0 +1,30 @@
+\hypertarget{riskmanager_8h_source}{}\doxysection{riskmanager.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef TRADINGSYSTEM\_RISKMANAGER\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define TRADINGSYSTEM\_RISKMANAGER\_H}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}broker.h"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}portfolio.h"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_risk_manager}{RiskManager}} \{}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{private}:}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17     \mbox{\hyperlink{class_broker}{Broker}} *broker = \mbox{\hyperlink{class_broker_abb04fbf2f95735d0e365619e6f090398}{Broker::GetInstance}}();}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_portfolio}{Portfolio}}* portfolio;}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_price_fetcher}{PriceFetcher}} priceFetcher;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_risk_manager_af2f94047927d6036bedb497a3f602539}{closeAllOpenPositions}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \mbox{\hyperlink{class_risk_manager_ae16e2ec68bda51b3f4f1c0f53a848f49}{RiskManager}}(\mbox{\hyperlink{class_portfolio}{Portfolio}}* portfolio);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_risk_manager_ae8d4f7e1cd1179993b11c7b9391dbdd3}{manageRisk}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//TRADINGSYSTEM\_RISKMANAGER\_H}}
+
+\end{DoxyCode}

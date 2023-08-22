@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="yahoo-finance"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6CoreTools\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Gui\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6GuiTools\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Charts\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Widgets\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6WidgetsTools\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGL\;CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGLWidgets\;CMake Files\..\..\..\..\usr\local\Cellar\;CMake Files\..\..\..\..\usr\local\Cellar\qt\;CMake Files\..\..\..\..\usr\local\Cellar\qt\6.2.1\;CMake Files\..\..\..\..\usr\local\Cellar\qt\6.2.1\lib\;CMake Files\..\..\..\..\usr\local\Cellar\qt\6.2.1\lib\cmake\;CMake Files\..\..\..\..\usr\local\Cellar\qt\6.2.1\lib\cmake\Qt6\;CMake Files\yahoo-finance-master\;CMake Files\yahoo-finance-master\doc\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/example_autogen/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 example"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/example_autogen/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 example/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yahoo-finance">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/libyahoo-finance.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/yahoo-finance_autogen/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 yahoo-finance"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yahoo-finance/fast">
+				<Option output="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/libyahoo-finance.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/yahoo-finance_autogen/include"/>
+					<Add directory="/Users/hamidzargar/CLionProjects/tradingsystem/./yahoo-finance-master/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/lib"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 yahoo-finance/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_autogen">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 example_autogen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="yahoo-finance_autogen">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 yahoo-finance_autogen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="doc">
+				<Option working_dir="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/doc"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/doc/Makefile&quot;  VERBOSE=1 doc"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/doc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/doc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/doc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/example_autogen/mocs_compilation.cpp">
+			<Option target="example"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/cmake-build-debug/yahoo-finance-master/yahoo-finance_autogen/mocs_compilation.cpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/curl_utils.cpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/curl_utils.hpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/example.cpp">
+			<Option target="example"/>
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/quote.cpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/quote.hpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/spot.cpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/spot.hpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/time_utils.cpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/src/time_utils.hpp">
+			<Option target="yahoo-finance"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/Qt6Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/Qt6ConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/Qt6ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/Qt6Dependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/Qt6Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/Qt6VersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/QtFeature.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/QtPublicPluginHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/QtPublicTargetHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Core/Qt6CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Core/Qt6CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Core/Qt6CoreTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Core/Qt6CoreTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Gui/Qt6GuiTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Charts/Qt6ChartsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Charts\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Charts/Qt6ChartsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Charts\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Charts/Qt6ChartsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Charts\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Charts/Qt6ChartsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Charts\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Charts/Qt6ChartsTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Charts\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Charts/Qt6ChartsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Charts\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Charts/Qt6ChartsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Charts\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGL/Qt6OpenGLAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGL\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGL\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGL/Qt6OpenGLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGL\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGL/Qt6OpenGLDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGL\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGL/Qt6OpenGLTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGL\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGL\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGL\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGLWidgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGLWidgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGLWidgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGLWidgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGLWidgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGLWidgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\Qt6OpenGLWidgets\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/Cellar/qt/6.2.1/lib/cmake/Qt6/FindWrapAtomic.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Cellar\qt\6.2.1\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/Cellar/qt/6.2.1/lib/cmake/Qt6/FindWrapOpenGL.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Cellar\qt\6.2.1\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/../../../../usr/local/Cellar/qt/6.2.1/lib/cmake/Qt6/QtFeatureCommon.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\Cellar\qt\6.2.1\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\doc\"/>
+		</Unit>
+		<Unit filename="/Users/hamidzargar/CLionProjects/tradingsystem/yahoo-finance-master/doc/doxy.rc">
+			<Option virtualFolder="CMake Files\yahoo-finance-master\doc\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

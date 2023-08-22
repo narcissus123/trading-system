@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['getaction_0',['getAction',['../class_trade.html#aab0836a698be450a72bebc442606bcd8',1,'Trade']]],
+  ['getcashbalance_1',['getCashBalance',['../class_broker.html#a8623d26e9c24fa5ea2fadbf99e395513',1,'Broker']]],
+  ['getclosedpositions_2',['getClosedPositions',['../class_broker.html#ae479bc89b5512145cc0b3daa15925eb0',1,'Broker']]],
+  ['getconnectionstatus_3',['getConnectionStatus',['../class_broker.html#ac047669357989dfee857c7d3850a5f8a',1,'Broker']]],
+  ['getcurrentreturn_4',['getCurrentReturn',['../class_broker.html#a41da0f8e74d84b81685bb06874347e89',1,'Broker']]],
+  ['getinitialbalance_5',['getInitialBalance',['../class_broker.html#aee9c13ffe3cdc89b99ff10b775c4d5fe',1,'Broker']]],
+  ['getinstance_6',['GetInstance',['../class_broker.html#abb04fbf2f95735d0e365619e6f090398',1,'Broker']]],
+  ['getlocalhistory_7',['getLocalHistory',['../class_trading_strategy.html#a520f68f9afd500893c1d506e59cfe50d',1,'TradingStrategy']]],
+  ['getmaxdrawdown_8',['getMaxDrawdown',['../class_broker.html#a269e4c4cc95fef4ef81e2809a319d4dc',1,'Broker']]],
+  ['getmaxdrawdownthreshold_9',['getMaxDrawdownThreshold',['../class_broker.html#a8481691a2a59b6d28fe21f9312fb958d',1,'Broker']]],
+  ['getname_10',['getName',['../class_momentum_trading_strategy.html#a24416a8ed970e7405c63eaf291aa09de',1,'MomentumTradingStrategy::getName()'],['../class_regression_trading_strategy.html#a99e24fc427a56525dbb0e1381fa07c43',1,'RegressionTradingStrategy::getName()']]],
+  ['getnumshares_11',['getNumShares',['../class_trade.html#a69226a977a71979e0444e94f91bded14',1,'Trade']]],
+  ['getopenpositions_12',['getOpenPositions',['../class_broker.html#ad7f6ef83422ddfd674fc5178e766166c',1,'Broker']]],
+  ['getordertype_13',['getOrderType',['../class_trade.html#a69e6e865945a93cc6088a562f2f469bf',1,'Trade']]],
+  ['getprice_14',['getPrice',['../class_trade.html#a2734fe5f93b1606a163644ce272b6543',1,'Trade']]],
+  ['getsharperatio_15',['getSharpeRatio',['../class_broker.html#a1c09b531ebef96616b4636528543b17f',1,'Broker']]],
+  ['getsortinoratio_16',['getSortinoRatio',['../class_broker.html#a6a4ee045e68702c4ea71709f214425cd',1,'Broker']]],
+  ['getstockposition_17',['getStockPosition',['../class_broker.html#a18c720dc4f1606981f1a366098a8a7f5',1,'Broker']]],
+  ['getstrategies_18',['getStrategies',['../class_portfolio.html#a74b7dd22cf3362cca46323b19a909cc8',1,'Portfolio']]],
+  ['getstrategy_19',['getStrategy',['../class_portfolio.html#a699986fd8b7bb84f0e0d18be265713ce',1,'Portfolio']]],
+  ['getstrategyid_20',['getStrategyID',['../class_trade.html#ae80fce7e90e6b1c254e14d0349034c3f',1,'Trade::getStrategyID()'],['../class_trading_strategy.html#aa6fa9a8dbfb69a718a3dcf8cd8425cb9',1,'TradingStrategy::getStrategyID()']]],
+  ['getticker_21',['getTicker',['../class_trade.html#a33e671198950ab225ab9aefdec6e9b43',1,'Trade::getTicker()'],['../class_trading_strategy.html#ab1f39332bab3edc260603c416f6b799d',1,'TradingStrategy::getTicker()']]],
+  ['gettotalequity_22',['getTotalEquity',['../class_broker.html#a3fbfc246105524743569c708d349aab1',1,'Broker']]],
+  ['gettradehistory_23',['getTradeHistory',['../class_broker.html#a333395303e1eccde84cd706eeb158275',1,'Broker']]]
+];

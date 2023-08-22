@@ -1,0 +1,241 @@
+\hypertarget{class_portfolio}{}\doxysection{Portfolio Class Reference}
+\label{class_portfolio}\index{Portfolio@{Portfolio}}
+
+
+The class holds and manages the existing strategies by turning them on and off.  
+
+
+
+
+{\ttfamily \#include $<$portfolio.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_portfolio_a99184d0450606f63b23e6192bcc9b2b7}{Portfolio}} ()
+\begin{DoxyCompactList}\small\item\em The constructor for our class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a78698b3e67aa42ed7256992c689e3125}{start\+All\+Strategies}} ()
+\begin{DoxyCompactList}\small\item\em The strategies within our portoflio will be started and their status will changed to 1 to indicate they are on. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_ae9133e5ed982828b9bf3c6e8412407f3}{start\+Strategy}} (int strategy\+\_\+id)
+\begin{DoxyCompactList}\small\item\em The strategy within our portoflio will be started and their status will changed to 1 to indicate they are on. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a472380a96f3a3ea583978c5dfeec967e}{stop\+All\+Strategies}} ()
+\begin{DoxyCompactList}\small\item\em The strategies within our portoflio will be stopped and their status will changed to 0 to indicate they are off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a8a91ebffdf41d3584c618a89894ac412}{stop\+Strategy}} (int strategy\+\_\+id)
+\begin{DoxyCompactList}\small\item\em The strategy within our portoflio will be stopped and their status will changed to 0 to indicate they are off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_ad6f2a47a4e3c46aa9d322d2c64b0f69c}{add\+Strategy}} (\mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}} $\ast$strategy)
+\begin{DoxyCompactList}\small\item\em Adds the strategy to the portfolio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a40053e3edb9e379f5131e9de79ef5510}{remove\+Strategy}} (int strategy\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Removes the strategy to the portfolio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}} $\ast$ \mbox{\hyperlink{class_portfolio_a699986fd8b7bb84f0e0d18be265713ce}{get\+Strategy}} (int strategy\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Gets the strategy to the portfolio. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}} $\ast$, int $>$ $>$ \mbox{\hyperlink{class_portfolio_a74b7dd22cf3362cca46323b19a909cc8}{get\+Strategies}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the strategies in the portfolio. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_portfolio_a13467a02077a49befe18965f48f4e744}{is\+Strategy\+Active}} (int strategy\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Determines whether a strategy is active. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_portfolio_a70fed5ccdc7a970ac4287f8c63313730}{analyze\+All}} ()
+\begin{DoxyCompactList}\small\item\em Runs the analyze method on all the strategies i nteh portfolio that are active. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_portfolio_a033cf7b27790a7c3435e1642aa2cc5a0}\label{class_portfolio_a033cf7b27790a7c3435e1642aa2cc5a0}} 
+std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}} $\ast$, int $>$ $>$ {\bfseries strategies}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class holds and manages the existing strategies by turning them on and off. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_portfolio_a99184d0450606f63b23e6192bcc9b2b7}\label{class_portfolio_a99184d0450606f63b23e6192bcc9b2b7}} 
+\index{Portfolio@{Portfolio}!Portfolio@{Portfolio}}
+\index{Portfolio@{Portfolio}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{Portfolio()}{Portfolio()}}
+{\footnotesize\ttfamily Portfolio\+::\+Portfolio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+The constructor for our class. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_portfolio_ad6f2a47a4e3c46aa9d322d2c64b0f69c}\label{class_portfolio_ad6f2a47a4e3c46aa9d322d2c64b0f69c}} 
+\index{Portfolio@{Portfolio}!addStrategy@{addStrategy}}
+\index{addStrategy@{addStrategy}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{addStrategy()}{addStrategy()}}
+{\footnotesize\ttfamily void Portfolio\+::add\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}} $\ast$}]{strategy }\end{DoxyParamCaption})}
+
+
+
+Adds the strategy to the portfolio. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em strategy} & Represent a pointer a \mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}} subclass object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_portfolio_a70fed5ccdc7a970ac4287f8c63313730}\label{class_portfolio_a70fed5ccdc7a970ac4287f8c63313730}} 
+\index{Portfolio@{Portfolio}!analyzeAll@{analyzeAll}}
+\index{analyzeAll@{analyzeAll}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{analyzeAll()}{analyzeAll()}}
+{\footnotesize\ttfamily void Portfolio\+::analyze\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Runs the analyze method on all the strategies i nteh portfolio that are active. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_a74b7dd22cf3362cca46323b19a909cc8}\label{class_portfolio_a74b7dd22cf3362cca46323b19a909cc8}} 
+\index{Portfolio@{Portfolio}!getStrategies@{getStrategies}}
+\index{getStrategies@{getStrategies}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{getStrategies()}{getStrategies()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}} $\ast$, int $>$ $>$ Portfolio\+::get\+Strategies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets all the strategies in the portfolio. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+A vector holding the strategy objects and their status codes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_portfolio_a699986fd8b7bb84f0e0d18be265713ce}\label{class_portfolio_a699986fd8b7bb84f0e0d18be265713ce}} 
+\index{Portfolio@{Portfolio}!getStrategy@{getStrategy}}
+\index{getStrategy@{getStrategy}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{getStrategy()}{getStrategy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_trading_strategy}{Trading\+Strategy}} $\ast$ Portfolio\+::get\+Strategy (\begin{DoxyParamCaption}\item[{int}]{strategy\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Gets the strategy to the portfolio. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+\_\+id} & Represent the id of the strategy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_portfolio_a13467a02077a49befe18965f48f4e744}\label{class_portfolio_a13467a02077a49befe18965f48f4e744}} 
+\index{Portfolio@{Portfolio}!isStrategyActive@{isStrategyActive}}
+\index{isStrategyActive@{isStrategyActive}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{isStrategyActive()}{isStrategyActive()}}
+{\footnotesize\ttfamily bool Portfolio\+::is\+Strategy\+Active (\begin{DoxyParamCaption}\item[{int}]{strategy\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Determines whether a strategy is active. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+\_\+id} & Represent the id of the strategy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean for whether the strategy is active. True if active, False if not active. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_portfolio_a40053e3edb9e379f5131e9de79ef5510}\label{class_portfolio_a40053e3edb9e379f5131e9de79ef5510}} 
+\index{Portfolio@{Portfolio}!removeStrategy@{removeStrategy}}
+\index{removeStrategy@{removeStrategy}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{removeStrategy()}{removeStrategy()}}
+{\footnotesize\ttfamily void Portfolio\+::remove\+Strategy (\begin{DoxyParamCaption}\item[{int}]{strategy\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Removes the strategy to the portfolio. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+\_\+id} & Represent the id of the strategy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_portfolio_a78698b3e67aa42ed7256992c689e3125}\label{class_portfolio_a78698b3e67aa42ed7256992c689e3125}} 
+\index{Portfolio@{Portfolio}!startAllStrategies@{startAllStrategies}}
+\index{startAllStrategies@{startAllStrategies}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{startAllStrategies()}{startAllStrategies()}}
+{\footnotesize\ttfamily void Portfolio\+::start\+All\+Strategies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The strategies within our portoflio will be started and their status will changed to 1 to indicate they are on. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_ae9133e5ed982828b9bf3c6e8412407f3}\label{class_portfolio_ae9133e5ed982828b9bf3c6e8412407f3}} 
+\index{Portfolio@{Portfolio}!startStrategy@{startStrategy}}
+\index{startStrategy@{startStrategy}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{startStrategy()}{startStrategy()}}
+{\footnotesize\ttfamily void Portfolio\+::start\+Strategy (\begin{DoxyParamCaption}\item[{int}]{strategy\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+The strategy within our portoflio will be started and their status will changed to 1 to indicate they are on. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+\_\+id} & Represent the id of the strategy we want to start \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_portfolio_a472380a96f3a3ea583978c5dfeec967e}\label{class_portfolio_a472380a96f3a3ea583978c5dfeec967e}} 
+\index{Portfolio@{Portfolio}!stopAllStrategies@{stopAllStrategies}}
+\index{stopAllStrategies@{stopAllStrategies}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{stopAllStrategies()}{stopAllStrategies()}}
+{\footnotesize\ttfamily void Portfolio\+::stop\+All\+Strategies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The strategies within our portoflio will be stopped and their status will changed to 0 to indicate they are off. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_portfolio_a8a91ebffdf41d3584c618a89894ac412}\label{class_portfolio_a8a91ebffdf41d3584c618a89894ac412}} 
+\index{Portfolio@{Portfolio}!stopStrategy@{stopStrategy}}
+\index{stopStrategy@{stopStrategy}!Portfolio@{Portfolio}}
+\doxysubsubsection{\texorpdfstring{stopStrategy()}{stopStrategy()}}
+{\footnotesize\ttfamily void Portfolio\+::stop\+Strategy (\begin{DoxyParamCaption}\item[{int}]{strategy\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+The strategy within our portoflio will be stopped and their status will changed to 0 to indicate they are off. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em strategy\+\_\+id} & Represent the id of the strategy we want to stop \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+portfolio.\+h\item 
+portfolio.\+cpp\end{DoxyCompactItemize}

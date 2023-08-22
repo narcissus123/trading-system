@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libyahoo-finance.a CMakeFiles/yahoo-finance.dir/yahoo-finance_autogen/mocs_compilation.cpp.o CMakeFiles/yahoo-finance.dir/src/curl_utils.cpp.o CMakeFiles/yahoo-finance.dir/src/example.cpp.o CMakeFiles/yahoo-finance.dir/src/quote.cpp.o CMakeFiles/yahoo-finance.dir/src/spot.cpp.o CMakeFiles/yahoo-finance.dir/src/time_utils.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libyahoo-finance.a

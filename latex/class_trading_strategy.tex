@@ -1,0 +1,208 @@
+\hypertarget{class_trading_strategy}{}\doxysection{Trading\+Strategy Class Reference}
+\label{class_trading_strategy}\index{TradingStrategy@{TradingStrategy}}
+
+
+This class is an abstract class that will be the super class for all our trading strategy subclasses. This is the base class for our strategies and holds common methods and attributes that are common among all of its subclasses.  
+
+
+
+
+{\ttfamily \#include $<$tradingstrategy.\+h$>$}
+
+Inheritance diagram for Trading\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_trading_strategy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trading_strategy_a25dff1fe805896ae9e985b042664e3f8}{Trading\+Strategy}} (std\+::string ticker, int strategy\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Constructor for our abstract trading strategy class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_trading_strategy_ad304f133ab73f86679e456dc49cda7ce}{analyze}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_trading_strategy_ab574015261baef39bb714ab701dc507e}{get\+Name}} ()=0
+\item 
+\mbox{\hyperlink{class_trade}{Trade}} \mbox{\hyperlink{class_trading_strategy_a631f959188d7609e68b81a9cf1cba311}{create\+Trade}} (int num\+\_\+shares, int action)
+\begin{DoxyCompactList}\small\item\em Creates a trade object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trading_strategy_a7e609a7495d7bdb8ea4d4bc82ce536db}{add\+To\+Local\+History}} (const \mbox{\hyperlink{class_trade}{Trade}} \&trade)
+\begin{DoxyCompactList}\small\item\em Adds a trade to the local history. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_trade}{Trade}} $>$ \mbox{\hyperlink{class_trading_strategy_a520f68f9afd500893c1d506e59cfe50d}{get\+Local\+History}} ()
+\begin{DoxyCompactList}\small\item\em Gets the local history. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_trading_strategy_aab4c9c86553ad820ccc52fda3412d32b}{$\sim$\+Trading\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Destructor to deallocate memory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_trading_strategy_aa6fa9a8dbfb69a718a3dcf8cd8425cb9}{get\+Strategy\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Gets the strategy id of the strategy. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trading_strategy_ab1f39332bab3edc260603c416f6b799d}{get\+Ticker}} ()
+\begin{DoxyCompactList}\small\item\em Gets the ticker the strategy is executing on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_trading_strategy_a6f401e4f5d81d113526f9d884fd9bf98}\label{class_trading_strategy_a6f401e4f5d81d113526f9d884fd9bf98}} 
+\mbox{\hyperlink{class_broker}{Broker}} $\ast$ {\bfseries broker} = \mbox{\hyperlink{class_broker_abb04fbf2f95735d0e365619e6f090398}{Broker\+::\+Get\+Instance}}()
+\item 
+\mbox{\Hypertarget{class_trading_strategy_ad7fe2f6cba28540076bddd3029097d50}\label{class_trading_strategy_ad7fe2f6cba28540076bddd3029097d50}} 
+\mbox{\hyperlink{class_price_fetcher}{Price\+Fetcher}} {\bfseries price\+\_\+fetcher} = \mbox{\hyperlink{class_price_fetcher}{Price\+Fetcher}}()
+\item 
+\mbox{\Hypertarget{class_trading_strategy_a9824b6bfaab44e841f8d78bf6d189fc4}\label{class_trading_strategy_a9824b6bfaab44e841f8d78bf6d189fc4}} 
+std\+::string {\bfseries ticker}
+\item 
+\mbox{\Hypertarget{class_trading_strategy_a32faf22944fcdaf53b2aa3931df7646f}\label{class_trading_strategy_a32faf22944fcdaf53b2aa3931df7646f}} 
+std\+::vector$<$ \mbox{\hyperlink{class_trade}{Trade}} $>$ {\bfseries local\+\_\+history}
+\item 
+\mbox{\Hypertarget{class_trading_strategy_ad959d9c9e59538be4c59501b81c49112}\label{class_trading_strategy_ad959d9c9e59538be4c59501b81c49112}} 
+int {\bfseries strategy\+\_\+id}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is an abstract class that will be the super class for all our trading strategy subclasses. This is the base class for our strategies and holds common methods and attributes that are common among all of its subclasses. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_trading_strategy_a25dff1fe805896ae9e985b042664e3f8}\label{class_trading_strategy_a25dff1fe805896ae9e985b042664e3f8}} 
+\index{TradingStrategy@{TradingStrategy}!TradingStrategy@{TradingStrategy}}
+\index{TradingStrategy@{TradingStrategy}!TradingStrategy@{TradingStrategy}}
+\doxysubsubsection{\texorpdfstring{TradingStrategy()}{TradingStrategy()}}
+{\footnotesize\ttfamily Trading\+Strategy\+::\+Trading\+Strategy (\begin{DoxyParamCaption}\item[{std\+::string}]{ticker,  }\item[{int}]{strategy\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Constructor for our abstract trading strategy class. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ticker} & Represents the ticker that the trading strategy will execute on \\
+\hline
+{\em strategy\+\_\+id} & Represents the strategy id assigned to the trading strategy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_trading_strategy_aab4c9c86553ad820ccc52fda3412d32b}\label{class_trading_strategy_aab4c9c86553ad820ccc52fda3412d32b}} 
+\index{TradingStrategy@{TradingStrategy}!````~TradingStrategy@{$\sim$TradingStrategy}}
+\index{````~TradingStrategy@{$\sim$TradingStrategy}!TradingStrategy@{TradingStrategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$TradingStrategy()}{~TradingStrategy()}}
+{\footnotesize\ttfamily Trading\+Strategy\+::$\sim$\+Trading\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor to deallocate memory. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_trading_strategy_a7e609a7495d7bdb8ea4d4bc82ce536db}\label{class_trading_strategy_a7e609a7495d7bdb8ea4d4bc82ce536db}} 
+\index{TradingStrategy@{TradingStrategy}!addToLocalHistory@{addToLocalHistory}}
+\index{addToLocalHistory@{addToLocalHistory}!TradingStrategy@{TradingStrategy}}
+\doxysubsubsection{\texorpdfstring{addToLocalHistory()}{addToLocalHistory()}}
+{\footnotesize\ttfamily void Trading\+Strategy\+::add\+To\+Local\+History (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_trade}{Trade}} \&}]{trade }\end{DoxyParamCaption})}
+
+
+
+Adds a trade to the local history. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em trade} & Represents the trade we will be adding to our local strategy history \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_trading_strategy_ad304f133ab73f86679e456dc49cda7ce}\label{class_trading_strategy_ad304f133ab73f86679e456dc49cda7ce}} 
+\index{TradingStrategy@{TradingStrategy}!analyze@{analyze}}
+\index{analyze@{analyze}!TradingStrategy@{TradingStrategy}}
+\doxysubsubsection{\texorpdfstring{analyze()}{analyze()}}
+{\footnotesize\ttfamily virtual void Trading\+Strategy\+::analyze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_momentum_trading_strategy_a446aa11c12724afa6edc6acd3c90ede8}{Momentum\+Trading\+Strategy}}, and \mbox{\hyperlink{class_regression_trading_strategy_a3d8fbd9fb943f42f0788e6a0292a8e2d}{Regression\+Trading\+Strategy}}.
+
+\mbox{\Hypertarget{class_trading_strategy_a631f959188d7609e68b81a9cf1cba311}\label{class_trading_strategy_a631f959188d7609e68b81a9cf1cba311}} 
+\index{TradingStrategy@{TradingStrategy}!createTrade@{createTrade}}
+\index{createTrade@{createTrade}!TradingStrategy@{TradingStrategy}}
+\doxysubsubsection{\texorpdfstring{createTrade()}{createTrade()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_trade}{Trade}} Trading\+Strategy\+::create\+Trade (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+shares,  }\item[{int}]{action }\end{DoxyParamCaption})}
+
+
+
+Creates a trade object. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_trade}{Trade}} object that will be executed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trading_strategy_a520f68f9afd500893c1d506e59cfe50d}\label{class_trading_strategy_a520f68f9afd500893c1d506e59cfe50d}} 
+\index{TradingStrategy@{TradingStrategy}!getLocalHistory@{getLocalHistory}}
+\index{getLocalHistory@{getLocalHistory}!TradingStrategy@{TradingStrategy}}
+\doxysubsubsection{\texorpdfstring{getLocalHistory()}{getLocalHistory()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_trade}{Trade}} $>$ Trading\+Strategy\+::get\+Local\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the local history. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{class_trading_strategy_ab574015261baef39bb714ab701dc507e}\label{class_trading_strategy_ab574015261baef39bb714ab701dc507e}} 
+\index{TradingStrategy@{TradingStrategy}!getName@{getName}}
+\index{getName@{getName}!TradingStrategy@{TradingStrategy}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual std\+::string Trading\+Strategy\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_momentum_trading_strategy_a24416a8ed970e7405c63eaf291aa09de}{Momentum\+Trading\+Strategy}}, and \mbox{\hyperlink{class_regression_trading_strategy_a99e24fc427a56525dbb0e1381fa07c43}{Regression\+Trading\+Strategy}}.
+
+\mbox{\Hypertarget{class_trading_strategy_aa6fa9a8dbfb69a718a3dcf8cd8425cb9}\label{class_trading_strategy_aa6fa9a8dbfb69a718a3dcf8cd8425cb9}} 
+\index{TradingStrategy@{TradingStrategy}!getStrategyID@{getStrategyID}}
+\index{getStrategyID@{getStrategyID}!TradingStrategy@{TradingStrategy}}
+\doxysubsubsection{\texorpdfstring{getStrategyID()}{getStrategyID()}}
+{\footnotesize\ttfamily int Trading\+Strategy\+::get\+Strategy\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the strategy id of the strategy. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The strategy id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trading_strategy_ab1f39332bab3edc260603c416f6b799d}\label{class_trading_strategy_ab1f39332bab3edc260603c416f6b799d}} 
+\index{TradingStrategy@{TradingStrategy}!getTicker@{getTicker}}
+\index{getTicker@{getTicker}!TradingStrategy@{TradingStrategy}}
+\doxysubsubsection{\texorpdfstring{getTicker()}{getTicker()}}
+{\footnotesize\ttfamily std\+::string Trading\+Strategy\+::get\+Ticker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the ticker the strategy is executing on. 
+
+\begin{DoxyAuthor}{Author}
+Hamid Zargar 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+The ticker 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+tradingstrategy.\+h\item 
+tradingstrategy.\+cpp\end{DoxyCompactItemize}

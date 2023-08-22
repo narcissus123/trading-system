@@ -1,0 +1,36 @@
+\hypertarget{portfolio_8h_source}{}\doxysection{portfolio.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef TRADINGSYSTEM\_PORTFOLIO\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define TRADINGSYSTEM\_PORTFOLIO\_H}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}tradingstrategy.h"{}}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_portfolio}{Portfolio}}\{}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{private}:}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15     std::vector<std::pair<TradingStrategy*,int>> strategies; \textcolor{comment}{// int is the status in the pair}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \mbox{\hyperlink{class_portfolio_a99184d0450606f63b23e6192bcc9b2b7}{Portfolio}}();}
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_portfolio_a78698b3e67aa42ed7256992c689e3125}{startAllStrategies}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_portfolio_ae9133e5ed982828b9bf3c6e8412407f3}{startStrategy}}(\textcolor{keywordtype}{int} strategy\_id);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_portfolio_a472380a96f3a3ea583978c5dfeec967e}{stopAllStrategies}}();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_portfolio_a8a91ebffdf41d3584c618a89894ac412}{stopStrategy}}(\textcolor{keywordtype}{int} strategy\_id);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_portfolio_ad6f2a47a4e3c46aa9d322d2c64b0f69c}{addStrategy}}(\mbox{\hyperlink{class_trading_strategy}{TradingStrategy}}* strategy);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_portfolio_a40053e3edb9e379f5131e9de79ef5510}{removeStrategy}}(\textcolor{keywordtype}{int} strategy\_id);}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_trading_strategy}{TradingStrategy}}* \mbox{\hyperlink{class_portfolio_a699986fd8b7bb84f0e0d18be265713ce}{getStrategy}}(\textcolor{keywordtype}{int} strategy\_id);}
+\DoxyCodeLine{27     std::vector<std::pair<TradingStrategy*,int>> \mbox{\hyperlink{class_portfolio_a74b7dd22cf3362cca46323b19a909cc8}{getStrategies}}();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_portfolio_a13467a02077a49befe18965f48f4e744}{isStrategyActive}}(\textcolor{keywordtype}{int} strategy\_id);}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_portfolio_a70fed5ccdc7a970ac4287f8c63313730}{analyzeAll}}();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//TRADINGSYSTEM\_PORTFOLIO\_H}}
+
+\end{DoxyCode}
